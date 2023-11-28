@@ -1,3 +1,9 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/efficiencyhub');
+
+try {
+    mongoose.connect(process.env.MONGODB_CONNECTION_URI);
+} catch (err) {
+    console.log(err)
+}
+
 export default mongoose;
