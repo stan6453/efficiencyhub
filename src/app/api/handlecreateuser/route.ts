@@ -1,7 +1,11 @@
+import User from "../../../../mongoose/usermodel";
 export async function POST(request:Request){
-    const data = await request.json()
-    console.log(data);
-    return Response.json(data)
+    const body = await request.json()
+    const newUser = {
+        _id : body.data.id,
+        username: body.data.username,
+    }
+    new User(newUser).save()
 }
 
 export const runtime = 'nodejs';
