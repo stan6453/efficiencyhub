@@ -5,7 +5,7 @@ export default async function Home() {
   let payload;
 
   try {
-    const data = await fetch('localhost:3000/api/handlecreateuser', {
+    const data = await fetch('https://efficiencyhub-git-main-stan6453.vercel.app//api/handlecreateuser', {
       method: 'POST',
       body: JSON.stringify({
         data: {
