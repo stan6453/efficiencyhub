@@ -1,4 +1,4 @@
-export async function POST(request:Request){
+export async function GET(request:Request){
     const data = await request.json()
-    console.log(data);
+    return Response.json({message:"ok"})
 }
