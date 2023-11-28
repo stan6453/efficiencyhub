@@ -7,12 +7,14 @@ export default async function Home() {
     body: JSON.stringify({ message: 'testing' }),
   });
 
-  console.log(await data.text());
+  const payload =await data.text()
+
+  console.log(payload);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        hi
+        {payload}
       </div>
     </main>
   )

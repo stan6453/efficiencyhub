@@ -1,6 +1,7 @@
-export async function GET(request:Request){
-    // const data = await request.json()
-    return Response.json({message:"ok"})
+export async function POST(request:Request){
+    const data = await request.json()
+    console.log(data);
+    return Response.json(data)
 }
 
 export const runtime = 'nodejs';
