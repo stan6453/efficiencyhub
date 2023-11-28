@@ -4,10 +4,15 @@ export default async function Home() {
 
   const data = await fetch('https://efficiencyhub-git-main-stan6453.vercel.app/api/handlecreateuser', {
     method: 'POST',
-    body: JSON.stringify({ message: 'testing' }),
+    body: JSON.stringify({
+      data: {
+        _id: 'fake_id',
+        username: 'stanfake',
+      }
+    }),
   });
 
-  const payload =await data.text()
+  const payload = await data.text()
 
   console.log(payload);
 
