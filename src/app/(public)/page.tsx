@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default async function Home() {
 
-  const data = await fetch('https://efficiencyhub-ktosok6il-stan6453.vercel.app/api/handlecreateuser', {
+  const data = await fetch('https://efficiencyhub-git-main-stan6453.vercel.app/api/handlecreateuser', {
     method: 'POST',
     body: JSON.stringify({ message: 'testing' }),
   });
