@@ -2,7 +2,7 @@ import mongoose from './mongooseConfig';
 
 const UserSchema = new mongoose.Schema(
     {
-        id: { type: String, required: true },
+        _id: { type: String, required: true },
         username: { type: String, required: true },
         role: { type: String, required: true, default: "user" },
         stared: [{
