@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     //     return Response.json({error:`${err}`})
     // }
 
-    // return Response.json(newUser);
+    return Response.json({status: 200});
 }
 
 export const runtime = 'nodejs';
