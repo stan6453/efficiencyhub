@@ -1,14 +1,18 @@
 import mongoose from './mongooseConfig';
 
-const UserSchema = new mongoose.Schema({
-    _id: { type: String, required: true},
-    username: { type: String, required: true },
-    role: { type: String, required: true, default: "user" },
-    created: { type: Date, default: Date.now },
-    updated: { type: Date, default: Date.now },
-});
+const UserSchema = new mongoose.Schema(
+    {
+        id: { type: String, required: true },
+        username: { type: String, required: true },
+        role: { type: String, required: true, default: "user" },
+        stared: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "product"
+        }],
+    },
+    { timestamps: true, collection: 'user' });
 
-const User = mongoose.model("User", UserSchema);
+const User = mongoose.models.user || mongoose.model("user", UserSchema);
 
 export default User;
 
