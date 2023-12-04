@@ -10,7 +10,7 @@ export async function POST(request: Request) {
         await new User(newUser).save()
     } catch (err) {
         console.log(err)
-        return Response.json({err})
+        return Response.json({error:`${err}`})
     }
 
     return Response.json(newUser);
