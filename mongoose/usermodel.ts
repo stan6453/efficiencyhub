@@ -4,12 +4,12 @@ const UserSchema = new mongoose.Schema(
     {
         _id: { type: String, required: true },
         role: { type: String, required: true, default: "user" },
-        starred: [{
+        wishlist: [{
             type: mongoose.Schema.Types.ObjectId,
-            ref: "product"
+            ref: "products"
         }],
     },
-    { timestamps: true, collection: 'user' });
+    { timestamps: true });
 
 const User = mongoose.models.user || mongoose.model("user", UserSchema);
 

@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 try {
-    mongoose.connect(process.env.MONGODB_URI, {dbName:'efficiencyhub'});
+    mongoose.connect(process.env.MONGODB_URI, {
+        dbName: 'efficiencyhub',
+    });
 } catch (err) {
     console.log(err)
 }

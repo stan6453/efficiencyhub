@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6579c0e1d48e37730918367d"
+  },
+  "name": "Noorio B200 security camera",
+  "description": "Introducing the Noorio B200 Security Camera – Your Ultimate Guardian for Unmatched Home Security!\r\n\r\n    🌟 Elevate Your Security: \r\n    Experience peace of mind like never before with the Noorio B200 Wireless Outdoor Security Camera. Boasting a crystal-clear 1080p resolution, this wire-free wonder ensures every detail of your surroundings is captured with precision.\r\n    \r\n    🌈 Color Night Vision & Built-in Spotlight:\r\n    Unleash the power of color night vision, revealing vibrant details even in the darkest corners. The motion-activated spotlight further adds a layer of security, illuminating any unexpected activity and deterring unwanted visitors.\r\n    \r\n    🚀 Advanced AI Detection:\r\n    Powered by cutting-edge AI technology, the Noorio B200 distinguishes between human movements and false alarms, such as swaying trees or passing cars. Say goodbye to unnecessary notifications and hello to accurate alerts that matter.\r\n    \r\n    💡 No Hidden Costs, Maximum Storage:\r\n    With 8GB local storage, store up to 3000 video clips without a subscription! Plus, enjoy limited FREE cloud service via our dedicated customer support. Noorio ensures security without compromise.\r\n    \r\n    🔋 100% Wire-Free & Long-lasting:\r\n    Installation has never been easier – go completely wire-free with the built-in rechargeable battery lasting up to 180 days. Mount it effortlessly with the magnetic mount, securing your property with 24/7 motion-activated vigilance.\r\n    \r\n    🤖 Smart Compatibility:\r\n    Sync seamlessly with Alexa for a hands-free experience. Noorio B200 simplifies security, making it as easy as a few clicks to set up and configure.\r\n    \r\n    Secure your world effortlessly with the Noorio B200 – because when it comes to your home, nothing is more important than peace of mind.",
+  "features": [
+    "Wireless",
+    "Battery Powered WiFi Camera",
+    "Color Night Vision",
+    "AI Motion Detection",
+    "Work with Alexa",
+    "Set up in Minutes"
+  ],
+  "tags": [
+    "Security",
+    "Camera",
+    "Wireless",
+    "Outdoor",
+    "indoor",
+    "home",
+    "office"
+  ],
+  "images": [
+    "https://asset.cloudinary.com/dc39mtsh5/9bb492db0f2413b2ec0199ac78921325",
+    "https://asset.cloudinary.com/dc39mtsh5/590ec2a0bdcf61471068b36a35ad5484",
+    "https://asset.cloudinary.com/dc39mtsh5/1549680c4b7c6c84a886ff0e355fc278"
+  ],
+  "videos": [
+    "https://vm.tiktok.com/ZM6jBRx7B/",
+    "https://a.co/d/1qwAS7k"
+  ],
+  "category": "security",
+  "subcategory": "surveillance",
+  "stores": [
+    {
+      "store": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B09ZY9THZ1&asins=B09ZY9THZ1&linkId=99e4a79af06b7f5498d54b79d958fd85&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6579ca79d48e37730918367e"
+  },
+  "name": "Kunphy Ultrasonic Jewelry Cleaner",
+  "description": "✨ **Kunphy Ultrasonic Jewelry Cleaner – Rediscover the Sparkle in Your Precious Accessories!** ✨\r\n\r\n    Unleash the brilliance of your jewelry with the Kunphy Ultrasonic Jewelry Cleaner, the ultimate solution for a spotless shine!\r\n    \r\n    🌟 **Full-circle Cleaning Magic:**\r\n    Experience professional jewelry cleaning at your fingertips! This state-of-the-art cleaner works wonders in just minutes, using only tap water. For an extra boost, add a drop of Liquid Dish Soap for results that will leave you amazed!\r\n    \r\n    🔍 **Larger Capacity, Deeper Clean:**\r\n    With a spacious stainless steel chamber measuring 7.1 L x 2.9W x 2.16 H inches, this portable cleaner accommodates all your treasures – from rings and earrings to glasses and more. Every nook and cranny receives a deep, thorough cleanse, ensuring your valuables sparkle like new.\r\n    \r\n    🌈 **Easy to Use, Smart Cleaning:**\r\n    Embrace simplicity with the one-touch button and intuitive indicator. The flashing red light signals overheat protection, safeguarding your machine from damage. Effortless, smart cleaning that elevates your jewelry care routine.\r\n    \r\n    🔇 **Low-Noise Design, High-End Durability:**\r\n    Immerse yourself in a peaceful cleaning experience with our low-noise design. The high-end waterproof surface finish adds durability and a luxurious tactile feel. Crafted with SUS 304 stainless steel, this cleaner ensures corrosion resistance, allowing you to use any ultrasonic detergent or solution with peace of mind.\r\n    \r\n    💎 **Versatile Brilliance:**\r\n    This multi-purpose jewelry cleaning machine is your all-in-one solution. Clean jewelry, rings, eyeglasses, dentures, watch coins, and more with ease. Elevate the brilliance of every accessory in your collection.\r\n    \r\n    ✨ **Revitalize Your Jewelry Collection:**\r\n    Visit the Kunphy Store now to unlock the secret to dazzling accessories. With a price of $35.99, this ultrasonic jewelry cleaner is your ticket to a world of brilliance and shine. Don't miss out – reclaim the sparkle today! 💍🌟",
+  "features": [
+    "Easy to Use",
+    "Smart Cleaning",
+    "Low-Noise Design",
+    "High-End Durability:"
+  ],
+  "tags": [
+    "magnetic",
+    "ultrasonic",
+    "jewelry"
+  ],
+  "images": [
+    "https://asset.cloudinary.com/dc39mtsh5/6fe2cdb7d74ed64e9983049a182e68b8",
+    "https://asset.cloudinary.com/dc39mtsh5/22c64bd2e8e1b01090bcb68d154bd235",
+    "https://asset.cloudinary.com/dc39mtsh5/34d62a798873dfc323cfb331c4abcc52"
+  ],
+  "category": "jewelry",
+  "stores": [
+    {
+      "store": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B09YHHJCYB&asins=B09YHHJCYB&linkId=6e02acce221f6f067f66bc830621a46d&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    }
+  ]
+}]
