@@ -43,9 +43,11 @@ export default function ProductIndex() {
     const [products, setProducts] = useState<null | []>(null);
 
     useEffect(() => {
+        console.log('getting categories')
         getCategories()
             .then((res) => {
                 setCategories(res);
+                console.log('categories:', res)
             })
     }, [])
 
