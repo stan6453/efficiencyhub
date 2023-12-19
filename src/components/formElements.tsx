@@ -67,8 +67,7 @@ export function SelectItems(
                         {categories.map((category) => (
                             <div
                                 key={category.name}
-                                className={`flex items-center justify-evenly py-2 cursor-pointer ${isSelected(category.name) ? 'bg-blue-400 border-gray-700 border-2' : ''}
-                                hover:shadow-md rounded-md px-2 py-1 my-1`}
+                                className={`flex items-center justify-evenly py-2 cursor-pointer hover:shadow-md rounded-md px-2 py-1 my-1 ${isSelected(category.name) ? 'bg-blue-400 border-gray-700 border-2' : 'bg-white'}`}
                                 onClick={() => toggleCategory(category.name)}
                             >
                                 <div className={`${isSelected(category.name) ? 'font-semibold text-white' : 'text-gray-700'}`}>
