@@ -12,7 +12,8 @@ import {
     SignInButton,
     UserButton,
 } from "@clerk/nextjs";
-import { usePathname, useSearchParams  } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
+import Link from 'next/link'
 
 
 
@@ -44,9 +45,12 @@ export default function NavBar() {
                             width={100}
                             height={100}
                         /> */}
-                        <div className="text-2xl text-white font-bold mr-10 px-4">
-                            Efficiency Hub
-                        </div>
+                        <Link
+                            href='/products'>
+                            <div className="text-2xl text-white font-bold mr-10 px-4">
+                                Efficiency Hub
+                            </div>
+                        </Link>
                         <button className="text-white text-3xl cursor-pointer md:hidden mr-7" onClick={toggleNav}>
                             <RxHamburgerMenu />
                         </button>
@@ -72,8 +76,8 @@ export default function NavBar() {
                             <div>
                                 <SignedIn>
                                     <UserButton
-                                    afterSignOutUrl={`${pathname}?${searchParams}`}
-                                     />
+                                        afterSignOutUrl={`${pathname}?${searchParams}`}
+                                    />
                                 </SignedIn>
                                 <SignedOut>
                                     <SignInButton
@@ -91,10 +95,15 @@ export default function NavBar() {
                                 </SignedOut>
                             </div>
                         </button>
-
-                        <button className="text-white hover:text-gray-300 mx-4">
-                            <RiHeartFill size='1.3rem' />
-                        </button>
+                        <Link
+                            className="text-white hover:text-gray-200 mx-4"
+                            href="/wishlist"
+                        >
+                            <RiHeartFill
+                                style={{ color: pathname === '/wishlist' ? 'red' : 'white' }}
+                                size= {pathname === '/wishlist' ? '2rem' : '1.3rem'}
+                            />
+                        </Link>
                     </div>
                 </div>
 

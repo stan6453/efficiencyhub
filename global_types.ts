@@ -6,3 +6,8 @@ export interface IProduct {
 }
 
 export type Products = IProduct[];
+
+export interface Category {
+    name: string;
+    count: number;
+}

@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema(
         role: { type: String, required: true, default: "user" },
         wishlist: [{
             type: mongoose.Schema.Types.ObjectId,
-            ref: "products"
+            ref: "product"
         }],
     },
     { timestamps: true });

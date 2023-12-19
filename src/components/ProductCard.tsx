@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import Image from 'next/image';
 import { FaHeart } from "react-icons/fa";
 import { TfiHeart } from "react-icons/tfi";
@@ -9,16 +9,17 @@ import { IProduct } from "../../global_types";
 async function addToWishList(productId: string) {
     const url = new URL(`/api/users/me/wishlist/${productId}`, process.env.NEXT_PUBLIC_HOST)
     const res = await fetch(url, { method: 'POST' })
+    return (await res.json()).body.wishlist;
 }
 
 async function removeFromWishlist(productId: string) {
     const url = new URL(`/api/users/me/wishlist/${productId}`, process.env.NEXT_PUBLIC_HOST)
     const res = await fetch(url, { method: 'DELETE' })
-    console.log(await res.json())
+    return (await res.json()).body.wishlist;
 }
 
 
-export default function ProductCard({ product, inWishList }: { product: IProduct, inWishList: boolean }) {
+export default function ProductCard({ product, inWishList, setWishList }: { product: IProduct, inWishList: boolean, setWishList:Dispatch<SetStateAction<never[]>> }) {
     const [hover, setHover] = useState(false);
 
     return (
@@ -46,9 +47,8 @@ export default function ProductCard({ product, inWishList }: { product: IProduct
                                     color: 'black',
                                 }}
                                 size='1em'
-                                onClick={() => {
-                                    console.log('remove from wishlist')
-                                    removeFromWishlist(product._id)
+                                onClick={ async () => {
+                                    setWishList(await removeFromWishlist(product._id))
                                 }}
                             />
                             :
@@ -58,9 +58,8 @@ export default function ProductCard({ product, inWishList }: { product: IProduct
                                     color: 'black',
                                 }}
                                 size='1em'
-                                onClick={() => {
-                                    console.log('add to wishlist')
-                                    addToWishList(product._id)
+                                onClick={ async () => {
+                                    setWishList( await addToWishList(product._id))
                                 }}
                             />
                     }
