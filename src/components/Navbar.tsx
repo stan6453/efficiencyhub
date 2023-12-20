@@ -53,7 +53,7 @@ export default function NavBar() {
                             <a href="#" className="text-white text-sm font-semibold hover:text-gray-300 px-3 py-2">MEN</a>
                         </div> */}
                     </div>
-                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container':''} z-10`}>
+                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container' : ''} z-10`}>
                         <div className="relative">
                             <input
                                 onFocus={() => { setSearchInputFocused(true) }}
@@ -62,8 +62,15 @@ export default function NavBar() {
                                 className="w-full bg-gray-700 rounded-full pl-4 pr-10 py-2 text-sm placeholder-gray-400 text-white"
                                 placeholder="Search for items and brands"
                             />
-                            <button className="absolute right-0 top-0 mt-2 mr-3 text-gray-400">
-                                <BiSearchAlt size='1.3rem' />
+                            <button
+                                className="absolute right-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
+                                onFocus={() => { setSearchInputFocused(true) }}
+                                onBlur={() => { setSearchInputFocused(false) }}>
+                                <BiSearchAlt
+                                className='mx-auto'
+                                    onFocus={() => { setSearchInputFocused(true) }}
+                                    onBlur={() => { setSearchInputFocused(false) }}
+                                    size='1.3rem' />
                             </button>
                         </div>
                     </div>
