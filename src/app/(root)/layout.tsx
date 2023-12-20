@@ -12,7 +12,7 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
-    const [searchString, setSearch] = useState('');
+    const [searchString, setSearchString] = useState('');
     const [page, setPage] = useState(1);
     const [size, setSize] = useState(20);
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -23,7 +23,7 @@ export default function RootLayout({
     return (
         <searchContext.Provider value={{
             searchString,
-            setSearch,
+            setSearchString,
             page,
             setPage,
             size,

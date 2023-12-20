@@ -6,13 +6,14 @@ import { FaDoorOpen } from "react-icons/fa6";
 import { RiHeartFill } from "react-icons/ri";
 import { BiSearchAlt } from "react-icons/bi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { ImCancelCircle } from "react-icons/im";
 import {
     SignedIn,
     SignedOut,
     SignInButton,
     UserButton,
 } from "@clerk/nextjs";
-import { usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 import searchContext from "@/utils/searchContext";
@@ -27,16 +28,11 @@ export default function NavBar() {
     const [isNavVisible, setIsNavVisible] = useState(false);
     const [doorIconHovered, setDoorIconHovered] = useState(false);
     const { searchString,
-        setSearch,
+        setSearchString,
         page,
-        setPage,
         size,
-        setSize,
         selectedCategories,
-        setSelectedCategories,
-        products,
         setProducts,
-        totalProductsFound,
         setTotalProductsFound,
     } = useContext(searchContext);
 
@@ -68,13 +64,16 @@ export default function NavBar() {
                         <div className="relative mx-auto">
                             <input
                                 type="text"
-                                className="w-full bg-gray-700 rounded-full pl-4 pr-10 py-2 text-sm placeholder-gray-400 text-white"
+                                spellCheck="true"
+                                className="w-full bg-gray-700 rounded-full pl-10 py-2 text-sm placeholder-gray-400 text-white"
                                 placeholder="Search for items and brands"
                                 value={searchString}
-                                onChange={e => setSearch(e.target.value)}
-                                onKeyUp={e=>{
-                                    if(e.key === 'Enter'){
-                                        setPro({searchString, page, size, selectedCategories, setProducts, setTotalProductsFound})
+                                onChange={e => {
+                                    setSearchString(e.target.value)
+                                }}
+                                onKeyUp={e => {
+                                    if (e.key === 'Enter') {
+                                        setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
                                     }
                                 }}
                             />
@@ -84,9 +83,24 @@ export default function NavBar() {
                                 <BiSearchAlt
                                     className='mx-auto'
                                     size='1.3rem'
-                                    onClick={() => setPro({searchString, page, size, selectedCategories, setProducts, setTotalProductsFound})}
-                                    />
+                                    onClick={() => setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })}
+                                />
                             </button>
+                            {
+                                searchString.length === 0 ?
+                                    <></>
+                                    :
+                                    <button
+                                        className="absolute left-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
+                                    >
+                                        <ImCancelCircle
+                                            className='mx-auto'
+                                            size='1.3rem'
+                                            onClick={() => setSearchString('')}
+                                        />
+                                    </button>
+                            }
+
                         </div>
                     </div>
                     <div id='login-icon' className="flex items-center ml-5">
