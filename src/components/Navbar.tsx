@@ -60,13 +60,13 @@ export default function NavBar() {
                             <RxHamburgerMenu />
                         </button>
                     </div>
-                    <div className={`flex-1 w-25 max-w-lg z-10 mx-auto expand-search-input-container`}>
+                    <div className='flex-1 w-25 max-w-lg z-10 mx-auto expand-search-input-container'>
                         <div className="relative mx-auto">
                             <input
                                 type="text"
                                 spellCheck="true"
-                                className="w-full bg-gray-700 rounded-full pl-10 py-2 text-sm placeholder-gray-400 text-white"
-                                placeholder="Search for items and brands"
+                                className="w-full bg-gray-700 rounded-full pl-8 py-2 text-sm placeholder-gray-400 text-white"
+                                placeholder="Search Products"
                                 value={searchString}
                                 onChange={e => {
                                     setSearchString(e.target.value)
@@ -88,7 +88,7 @@ export default function NavBar() {
                             </button>
                             {
                                 searchString.length === 0 ?
-                                    <></>
+                                    null
                                     :
                                     <button
                                         className="absolute left-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
