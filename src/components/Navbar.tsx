@@ -36,7 +36,7 @@ export default function NavBar() {
 
     return (
         <div className="bg-gray-800 relative z-20 w-full" onClick={hideNav}>
-            <div className="max-w-screen-xl mx-auto px-4">
+            <div className="max-w-screen-xl mx-auto px-2">
                 <div className="flex justify-between items-center border-b border-gray-700 py-2">
                     <div className="flex items-center">
                         <Link
