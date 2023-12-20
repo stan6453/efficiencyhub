@@ -64,11 +64,7 @@ body {
     /* Adjusted to closely match the provided sample */
   }
 
-  .search-icon {
-    display: block;
-  }
-
-  .expand-search-input-container {
+  .expand-search-input-container:focus-within {
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
