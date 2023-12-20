@@ -56,7 +56,7 @@ export default function ProductIndex() {
 
     useEffect(() => {
         setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
-    }, [selectedCategories])
+    }, [selectedCategories, page])
 
     if (products === null) {
         return (
@@ -84,7 +84,7 @@ export default function ProductIndex() {
                 :
                 <div>
                     <div className="text-center mt-10">
-                        {totalProductsFound} products found
+                        {totalProductsFound} {totalProductsFound === 1 ? 'product' : 'products'} found
                     </div>
                     <ProductList products={products} wishList={wishList} setWishList={setWishList} />
                 </div>

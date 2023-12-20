@@ -72,6 +72,11 @@ export default function NavBar() {
                                 placeholder="Search for items and brands"
                                 value={searchString}
                                 onChange={e => setSearch(e.target.value)}
+                                onKeyUp={e=>{
+                                    if(e.key === 'Enter'){
+                                        setPro({searchString, page, size, selectedCategories, setProducts, setTotalProductsFound})
+                                    }
+                                }}
                             />
                             <button
                                 className="absolute right-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
