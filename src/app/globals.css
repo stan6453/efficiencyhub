@@ -46,7 +46,6 @@ body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  min-width: 600px;
 }
 
 @media (max-width: 768px) {
