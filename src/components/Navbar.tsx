@@ -68,8 +68,6 @@ export default function NavBar() {
                                 onBlur={() => { setSearchInputFocused(false) }}>
                                 <BiSearchAlt
                                 className='mx-auto'
-                                    onFocus={() => { setSearchInputFocused(true) }}
-                                    onBlur={() => { setSearchInputFocused(false) }}
                                     size='1.3rem' />
                             </button>
                         </div>
