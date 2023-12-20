@@ -11,5 +11,4 @@ export async function getAuthUser(){
 
 export async function getAuthUserData(){
     const user = await currentUser();
-    console.log(user)
 }

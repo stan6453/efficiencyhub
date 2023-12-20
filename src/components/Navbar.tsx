@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { FaDoorClosed } from "react-icons/fa6";
 import { FaDoorOpen } from "react-icons/fa6";
 import { RiHeartFill } from "react-icons/ri";
@@ -13,7 +13,10 @@ import {
     UserButton,
 } from "@clerk/nextjs";
 import { usePathname, useSearchParams } from 'next/navigation'
-import Link from 'next/link'
+import Link from 'next/link';
+
+import searchContext from "@/utils/searchContext";
+import { setPro } from "@/utils/products";
 
 
 
@@ -23,6 +26,19 @@ export default function NavBar() {
 
     const [isNavVisible, setIsNavVisible] = useState(false);
     const [doorIconHovered, setDoorIconHovered] = useState(false);
+    const { searchString,
+        setSearch,
+        page,
+        setPage,
+        size,
+        setSize,
+        selectedCategories,
+        setSelectedCategories,
+        products,
+        setProducts,
+        totalProductsFound,
+        setTotalProductsFound,
+    } = useContext(searchContext);
 
     const toggleNav = (event: any) => {
         event.stopPropagation(); // Prevents the click from propagating to the body
@@ -37,7 +53,7 @@ export default function NavBar() {
         <div className="bg-gray-800 relative z-20 w-full" onClick={hideNav}>
             <div className="max-w-screen-xl mx-auto px-2">
                 <div className="flex justify-between items-center border-b border-gray-700 py-2">
-                    <div className="flex items-center border-red-600 border-2">
+                    <div className="flex items-center">
                         <Link
                             href='/products'>
                             <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-1 px-3">
@@ -54,13 +70,17 @@ export default function NavBar() {
                                 type="text"
                                 className="w-full bg-gray-700 rounded-full pl-4 pr-10 py-2 text-sm placeholder-gray-400 text-white"
                                 placeholder="Search for items and brands"
+                                value={searchString}
+                                onChange={e => setSearch(e.target.value)}
                             />
                             <button
                                 className="absolute right-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
                             >
                                 <BiSearchAlt
                                     className='mx-auto'
-                                    size='1.3rem' />
+                                    size='1.3rem'
+                                    onClick={() => setPro({searchString, page, size, selectedCategories, setProducts, setTotalProductsFound})}
+                                    />
                             </button>
                         </div>
                     </div>

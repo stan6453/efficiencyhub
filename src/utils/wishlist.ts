@@ -4,6 +4,7 @@ export async function getWishList() {
         let res: any = await fetch(url)
         if (!res.ok) {
             console.log('not logged in or some other error');
+            console.log(res);
             return [];
         }
         res = await res.json()

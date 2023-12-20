@@ -1,0 +1,12 @@
+[{
+  "_id": "user_2ZlrLPkMZfpLeYbAHwlAZ9MhGCp",
+  "role": "user",
+  "wishlist": [],
+  "createdAt": {
+    "$date": "2023-12-19T17:37:34.775Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-19T17:45:28.262Z"
+  },
+  "__v": 8
+}]
