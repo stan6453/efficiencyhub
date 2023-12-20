@@ -41,11 +41,11 @@ export default function NavBar() {
                     <div className="flex items-center">
                         <Link
                             href='/products'>
-                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-3 px-4">
+                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-1 px-3">
                                 Efficiency Hub
                             </div>
                         </Link>
-                        <button className="text-white text- cursor-pointer md:hidden mr-2" onClick={toggleNav}>
+                        <button className="text-white text- cursor-pointer md:hidden mr-5" onClick={toggleNav}>
                             <RxHamburgerMenu />
                         </button>
                         {/* <div className="hidden md:block">
@@ -53,7 +53,7 @@ export default function NavBar() {
                             <a href="#" className="text-white text-sm font-semibold hover:text-gray-300 px-3 py-2">MEN</a>
                         </div> */}
                     </div>
-                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container' : ''} z-10`}>
+                    <div className={`flex-1 w-25 max-w-lg mx-auto z-10 mr-4 ${searchInputFocused ? 'expand-search-input-container' : ''}`}>
                         <div className="relative">
                             <input
                                 onFocus={() => { setSearchInputFocused(true) }}
@@ -75,7 +75,7 @@ export default function NavBar() {
                         </div>
                     </div>
                     <div id='login-icon' className="flex items-center">
-                        <button className="text-white hover:text-gray-300 mx-4 z-0">
+                        <button className="text-white hover:text-gray-300 z-0">
                             <div>
                                 <SignedIn>
                                     <UserButton
