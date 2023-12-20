@@ -34,6 +34,15 @@ export default function NavBar() {
         setIsNavVisible(false);
     };
 
+    function setSearchInputFocus(value: boolean) {
+        if (document.activeElement === document.getElementById('global-search-input') ||
+            document.activeElement === document.getElementById('global-search-input-button'))
+            setSearchInputFocused(true)
+        else
+            setSearchInputFocused(value)
+    }
+
+
     return (
         <div className="bg-gray-800 relative z-20 w-full" onClick={hideNav}>
             <div className="max-w-screen-xl mx-auto px-2">
@@ -56,18 +65,20 @@ export default function NavBar() {
                     <div className={`flex-1 w-25 max-w-lg mx-auto z-10 mr-4 ${searchInputFocused ? 'expand-search-input-container' : ''}`}>
                         <div className="relative">
                             <input
-                                onFocus={() => { setSearchInputFocused(true) }}
-                                onBlur={() => { setSearchInputFocused(false) }}
+                                id="global-search-input"
+                                onFocus={() => { setSearchInputFocus(true) }}
+                                onBlur={() => { setSearchInputFocus(false) }}
                                 type="text"
                                 className="w-full bg-gray-700 rounded-full pl-4 pr-10 py-2 text-sm placeholder-gray-400 text-white"
                                 placeholder="Search for items and brands"
                             />
                             <button
+                                id="global-search-input-button"
                                 className="absolute right-0 top-0 bottom-0 text-gray-400 active:bg-gray-700 hover:text-white hover:bg-gray-500 rounded-full aspect-square"
-                                onFocus={() => { setSearchInputFocused(true) }}
-                                onBlur={() => { setSearchInputFocused(false) }}>
+                                onFocus={() => { setSearchInputFocus(true) }}
+                                onBlur={() => { setSearchInputFocus(false) }}>
                                 <BiSearchAlt
-                                className='mx-auto'
+                                    className='mx-auto'
                                     size='1.3rem' />
                             </button>
                         </div>
