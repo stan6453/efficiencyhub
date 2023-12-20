@@ -39,16 +39,9 @@ export default function NavBar() {
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="flex justify-between items-center border-b border-gray-700 py-2">
                     <div className="flex items-center">
-                        {/* <Image
-                            src="/logo-colored_small.jpeg"
-                            alt="ASOS logo placeholder"
-                            className="mr-6"
-                            width={100}
-                            height={100}
-                        /> */}
                         <Link
                             href='/products'>
-                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-10 px-4">
+                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-3 px-4">
                                 Efficiency Hub
                             </div>
                         </Link>
@@ -60,7 +53,7 @@ export default function NavBar() {
                             <a href="#" className="text-white text-sm font-semibold hover:text-gray-300 px-3 py-2">MEN</a>
                         </div> */}
                     </div>
-                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container':''} `}>
+                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container':''} z-10`}>
                         <div className="relative">
                             <input
                                 onFocus={() => { setSearchInputFocused(true) }}
@@ -74,8 +67,8 @@ export default function NavBar() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex items-center">
-                        <button className="text-white hover:text-gray-300 mx-4">
+                    <div id='login-icon' className="flex items-center">
+                        <button className="text-white hover:text-gray-300 mx-4 z-0">
                             <div>
                                 <SignedIn>
                                     <UserButton
