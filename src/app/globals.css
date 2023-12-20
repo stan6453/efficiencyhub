@@ -26,6 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
 .product-card:hover {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -39,6 +46,7 @@ body {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  min-width: 600px;
 }
 
 @media (max-width: 768px) {
@@ -46,9 +54,9 @@ body {
       display: none;
   }
   .nav-menu.responsive {
-      display: block;
+      display: flex;
       position: absolute;
-      width: 45%;
+      width: 50%;
       top: 52px;
       left: 0;
       z-index: 1;
@@ -56,5 +64,16 @@ body {
   }
   .search-icon {
       display: block;
+  }
+  .expand-search-input-container{
+    top:0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 2px;
+    width: 100vw;
+    font-size: 18px;
+    animation: ease-in 1s;
   }
 }

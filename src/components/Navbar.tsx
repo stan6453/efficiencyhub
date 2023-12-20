@@ -23,6 +23,7 @@ export default function NavBar() {
 
     const [isNavVisible, setIsNavVisible] = useState(false);
     const [doorIconHovered, setDoorIconHovered] = useState(false);
+    const [searchInputFocused, setSearchInputFocused] = useState(false)
 
     const toggleNav = (event: any) => {
         event.stopPropagation(); // Prevents the click from propagating to the body
@@ -34,7 +35,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className="bg-gray-800 relative" onClick={hideNav}>
+        <div className="bg-gray-800 relative z-20 w-full" onClick={hideNav}>
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="flex justify-between items-center border-b border-gray-700 py-2">
                     <div className="flex items-center">
@@ -47,11 +48,11 @@ export default function NavBar() {
                         /> */}
                         <Link
                             href='/products'>
-                            <div className="text-2xl text-white font-bold mr-10 px-4">
+                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-10 px-4">
                                 Efficiency Hub
                             </div>
                         </Link>
-                        <button className="text-white text-3xl cursor-pointer md:hidden mr-7" onClick={toggleNav}>
+                        <button className="text-white text- cursor-pointer md:hidden mr-2" onClick={toggleNav}>
                             <RxHamburgerMenu />
                         </button>
                         {/* <div className="hidden md:block">
@@ -59,9 +60,11 @@ export default function NavBar() {
                             <a href="#" className="text-white text-sm font-semibold hover:text-gray-300 px-3 py-2">MEN</a>
                         </div> */}
                     </div>
-                    <div className="flex-1 w-25 max-w-lg mx-auto">
+                    <div className={`flex-1 w-25 max-w-lg mx-auto ${searchInputFocused ? 'expand-search-input-container':''} `}>
                         <div className="relative">
                             <input
+                                onFocus={() => { setSearchInputFocused(true) }}
+                                onBlur={() => { setSearchInputFocused(false) }}
                                 type="text"
                                 className="w-full bg-gray-700 rounded-full pl-4 pr-10 py-2 text-sm placeholder-gray-400 text-white"
                                 placeholder="Search for items and brands"
@@ -101,29 +104,23 @@ export default function NavBar() {
                         >
                             <RiHeartFill
                                 style={{ color: pathname === '/wishlist' ? 'red' : 'white' }}
-                                size= {pathname === '/wishlist' ? '2rem' : '1.3rem'}
+                                size={pathname === '/wishlist' ? '2rem' : '1.3rem'}
                             />
                         </Link>
                     </div>
                 </div>
 
                 {/* Naviagtion links */}
-                <div className={`flex flex-col md:flex-row justify-between items-center py-2 nav-menu shadow-lg ${isNavVisible ? 'responsive' : ''}`} onClick={e => e.stopPropagation()}>
-                    <div className="flex flex-col md:flex-row items-center">
-                        {/* <div className="bg-red-600 text-white px-3 py-1 text-xs font-bold uppercase tracking-wide transform rotate-12 -translate-y-1/2 md:translate-y-0">
-                            Sale
-                        </div> */}
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center whitespace-nowrap">New in</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Clothing</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Gifting</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Shoes</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Accessories</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Sportswear</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Winter</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Brands</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Topman</a>
-                        <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Marketplace</a>
-                    </div>
+                <div className={`flex flex-col md:flex-row justify-between items-center py-2 px-5 nav-menu shadow-lg ${isNavVisible ? 'responsive' : ''}`} onClick={e => e.stopPropagation()}>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center whitespace-nowrap">New in</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Clothing</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Gifting</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Shoes</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Sportswear</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Winter</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Brands</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Topman</a>
+                    <a href="#" className="text-gray-400 text-xs uppercase font-semibold hover:text-white hover:bg-gray-500 md:px-3 py-2 pl-8 w-[100%] md:text-center">Marketplace</a>
                 </div>
             </div>
         </div>
