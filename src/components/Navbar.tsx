@@ -51,12 +51,12 @@ export default function NavBar() {
 
     return (
         <div className="bg-gray-800 relative z-20 w-full" onClick={hideNav}>
-            <div className="max-w-screen-xl mx-auto px-2">
+            <div className="max-w-screen-xl mx-auto">
                 <div className="flex justify-between items-center border-b border-gray-700 py-2">
                     <div className="flex items-center">
                         <Link
                             href='/products'>
-                            <div className="text-base md:text-2xl text-white whitespace-nowrap font-bold mr-1 px-3">
+                            <div className="text-sm md:text-2xl text-white whitespace-nowrap font-bold mr-1 px-3">
                                 Efficiency Hub
                             </div>
                         </Link>
@@ -84,7 +84,7 @@ export default function NavBar() {
                             </button>
                         </div>
                     </div>
-                    <div id='login-icon' className="flex items-center">
+                    <div id='login-icon' className="flex items-center ml-5">
                         <button className="text-white hover:text-gray-300 z-0">
                             <div>
                                 <SignedIn>
