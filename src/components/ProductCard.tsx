@@ -23,7 +23,7 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
     const [hover, setHover] = useState(false);
 
     return (
-        <div className="mb-10 flex flex-col justify-evenly w-[300px] h-[400px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
+        <div className="mb-10 flex flex-col justify-evenly w-[250px] h-[400px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
             <div className="relative h-full w-full">
                 <Image
                     onMouseEnter={(e) => { setHover(true) }}
