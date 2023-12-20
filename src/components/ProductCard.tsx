@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { FaHeart } from "react-icons/fa";
 import { TfiHeart } from "react-icons/tfi";
 
@@ -9,7 +10,12 @@ import { IProduct } from "../../global_types";
 async function addToWishList(productId: string) {
     const url = new URL(`/api/users/me/wishlist/${productId}`, process.env.NEXT_PUBLIC_HOST)
     const res = await fetch(url, { method: 'POST' })
-    return (await res.json()).body.wishlist;
+    console.log(res)
+    if (res.redirected == true) {
+        return null
+    } else {
+        return (await res.json()).body.wishlist;
+    }
 }
 
 async function removeFromWishlist(productId: string) {
@@ -19,8 +25,9 @@ async function removeFromWishlist(productId: string) {
 }
 
 
-export default function ProductCard({ product, inWishList, setWishList }: { product: IProduct, inWishList: boolean, setWishList:Dispatch<SetStateAction<never[]>> }) {
+export default function ProductCard({ product, inWishList, setWishList }: { product: IProduct, inWishList: boolean, setWishList: Dispatch<SetStateAction<never[]>> }) {
     const [hover, setHover] = useState(false);
+    const router = useRouter()
 
     return (
         <div className="mb-10 flex flex-col justify-evenly w-[250px] h-[400px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
@@ -47,7 +54,7 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
                                     color: 'black',
                                 }}
                                 size='1em'
-                                onClick={ async () => {
+                                onClick={async () => {
                                     setWishList(await removeFromWishlist(product._id))
                                 }}
                             />
@@ -58,8 +65,12 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
                                     color: 'black',
                                 }}
                                 size='1em'
-                                onClick={ async () => {
-                                    setWishList( await addToWishList(product._id))
+                                onClick={async () => {
+                                    const wishList = await addToWishList(product._id)
+                                    if (wishList === null) {
+                                        return router.push('/login')
+                                    }
+                                    setWishList(wishList)
                                 }}
                             />
                     }

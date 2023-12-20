@@ -6,7 +6,6 @@ import ProductList from "@/components/ProductList";
 import { SelectItems as SelectCategories } from "@/components/formElements";
 import { getWishList } from "../../../../../src/utils/wishlist";
 import searchContext from "@/utils/searchContext";
-import { Category } from "../../../../../global_types";
 import { setPro } from "@/utils/products";
 
 async function getCategories() {
