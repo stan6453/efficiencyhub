@@ -100,7 +100,7 @@ export default function NavBar() {
                                             className='mx-auto'
                                             size='1.3rem'
                                             onClick={() =>{
-                                                (inputRef.current).focus()
+                                                (inputRef.current as any).focus()
                                                 setSearchString('')
                                             }
                                             }
