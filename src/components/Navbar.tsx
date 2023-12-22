@@ -13,7 +13,7 @@ import {
     SignInButton,
     UserButton,
 } from "@clerk/nextjs";
-import { usePathname, useSearchParams, useRouter  } from 'next/navigation';
+import { usePathname, useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 import searchContext from "@/utils/searchContext";
@@ -72,8 +72,11 @@ export default function NavBar() {
                                 className={`w-full bg-gray-700 rounded-full ${searchString.length > 0 ? 'pl-8' : 'pl-3'}  py-2 text-sm placeholder-gray-400 text-white`}
                                 placeholder="Search..."
                                 value={searchString}
-                                onChange={e => {
+                                onChange={(e: any) => {
                                     setSearchString(e.target.value)
+                                    if (e.target.value.length === 0) {
+                                        setPro({ searchString: e.target.value, page, size, selectedCategories, setProducts, setTotalProductsFound })
+                                    }
                                 }}
                                 onKeyUp={e => {
                                     if (e.key === 'Enter') {
