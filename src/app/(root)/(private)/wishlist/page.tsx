@@ -39,7 +39,8 @@ export default function Wishlist() {
     }
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-10">
+            <h1 className="text-center">Wishlist</h1>
             {products.length === 0 ?
                 <div className="justify-center items-center flex py-40">
                     <p>There is nothing in your wishlist</p>
