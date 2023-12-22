@@ -13,7 +13,7 @@ import {
     SignInButton,
     UserButton,
 } from "@clerk/nextjs";
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams, useRouter  } from 'next/navigation';
 import Link from 'next/link';
 
 import searchContext from "@/utils/searchContext";
@@ -24,6 +24,7 @@ import { setPro } from "@/utils/products";
 export default function NavBar() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
+    const router = useRouter()
     const inputRef = useRef(null)
 
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -65,10 +66,10 @@ export default function NavBar() {
                     <div className='flex-1 w-25 max-w-lg z-10 mx-auto expand-search-input-container'>
                         <div className="relative mx-auto">
                             <input
-                            ref={inputRef}
+                                ref={inputRef}
                                 type="text"
                                 spellCheck="true"
-                                className={`w-full bg-gray-700 rounded-full ${searchString.length > 0? 'pl-8' :'pl-3' }  py-2 text-sm placeholder-gray-400 text-white`}
+                                className={`w-full bg-gray-700 rounded-full ${searchString.length > 0 ? 'pl-8' : 'pl-3'}  py-2 text-sm placeholder-gray-400 text-white`}
                                 placeholder="Search..."
                                 value={searchString}
                                 onChange={e => {
@@ -86,7 +87,14 @@ export default function NavBar() {
                                 <BiSearchAlt
                                     className='mx-auto'
                                     size='1.3rem'
-                                    onClick={() => setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })}
+                                    onClick={() => {
+                                        if (pathname !== '/products') {
+                                            router.push('/products')
+                                        }
+
+                                        setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
+                                    }
+                                    }
                                 />
                             </button>
                             {
@@ -99,7 +107,7 @@ export default function NavBar() {
                                         <ImCancelCircle
                                             className='mx-auto'
                                             size='1.3rem'
-                                            onClick={() =>{
+                                            onClick={() => {
                                                 (inputRef.current as unknown as HTMLInputElement).focus()
                                                 setSearchString('')
                                             }
