@@ -7,7 +7,7 @@ import ListStores from "./ListStores";
 import VideoList from "./videoList";
 
 export default function ProductPage({ product }: { product: any }) {
-  const [activeAccordion, setActiveAccordion] = useState(3);
+  const [activeAccordion, setActiveAccordion] = useState(1);
 
   const toggleAccordion = useCallback(
     (index: any) => {
