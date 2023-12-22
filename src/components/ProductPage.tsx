@@ -16,11 +16,11 @@ export default function ProductPage({ product }: { product: any }) {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 p-5">
-      <div className="p-10">
+      <div className="p-10 md:p-20">
 
       <ImageSlider images={product.images} />
       </div>
-      <div className="w-full">
+      <div className="w-full p-1">
         <h1 className="text-2xl font-semibold mb-2">{product.name}</h1>
         <div>
           available on:
