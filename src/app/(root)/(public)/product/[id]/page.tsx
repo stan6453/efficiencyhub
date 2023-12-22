@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import DisplayProduct from "@/components/ProductPage";
+import SimilarProducts from "@/components/SimilarProducts";
 
 async function getProducts(id: string) {
   try {
@@ -38,6 +39,7 @@ export default function ProductPage() {
   return (
     <div>
       <DisplayProduct product={product}/>
+      <SimilarProducts id={(product as any)._id} />
     </div>
   );
 }

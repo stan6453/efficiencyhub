@@ -1,20 +1,35 @@
 import Product from "./productmodel";
 
-export async function getProducts(query = {}, page: number | undefined = 1, size = 20) {
-    const skip = (page - 1) * size;
+export async function getProducts(query:any = {}, page: number | undefined = 1, size = 20) {
+  const skip = (page - 1) * size;
 
-    const result = await Product.aggregate([
-        { $match: query },
-        {
-            $facet: {
-              documents: [{ $skip: skip }, { $limit: size }], // Adjust skip and limit as needed
-              count: [{ $count: 'count' }],
-            },
-        }
-      ]);
+  let documentPipeline = []
+  if (query.$text) {
+    documentPipeline = [
+      { $addFields: { score: { $meta: "textScore" } } },
+      { $sort: { score: { $meta: "textScore" } } },
+      { $skip: skip },
+      { $limit: size },
+    ]
+  } else {
+    documentPipeline = [
+      { $skip: skip },
+      { $limit: size },
+    ]
+  }
 
-      const products = result[0].documents;
-      const count = result[0].count[0].count;
+  const result = await Product.aggregate([
+    { $match: query },
+    {
+      $facet: {
+        documents: documentPipeline,
+        count: [{ $count: 'count' }],
+      },
+    }
+  ]);
 
-    return {products, count};
+  const products = result[0].documents;
+  const count = result[0].count[0].count;
+
+  return { products, count };
 }

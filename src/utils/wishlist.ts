@@ -25,3 +25,20 @@ export async function getWishlistProducts() {
     const res = await fetch(url)
     return (await res.json()).body.wishlist;
 }
+
+export async function addToWishList(productId: string) {
+    const url = new URL(`/api/users/me/wishlist/${productId}`, process.env.NEXT_PUBLIC_HOST)
+    const res = await fetch(url, { method: 'POST' })
+    console.log(res)
+    if (res.redirected == true) {
+        return null
+    } else {
+        return (await res.json()).body.wishlist;
+    }
+}
+
+export async function removeFromWishlist(productId: string) {
+    const url = new URL(`/api/users/me/wishlist/${productId}`, process.env.NEXT_PUBLIC_HOST)
+    const res = await fetch(url, { method: 'DELETE' })
+    return (await res.json()).body.wishlist;
+}

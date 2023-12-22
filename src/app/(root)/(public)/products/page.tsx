@@ -3,8 +3,8 @@
 import { useState, useEffect, useContext } from "react";
 
 import ProductList from "@/components/ProductList";
+import ProductCard from '../../../../components/ProductCard';
 import { SelectItems as SelectCategories } from "@/components/formComponents";
-import { getWishList } from "../../../../../src/utils/wishlist";
 import searchContext from "@/utils/searchContext";
 import { setPro } from "@/utils/products";
 
@@ -37,7 +37,6 @@ export default function ProductIndex() {
         categories,
         setCategories,
     } = useContext(searchContext);
-    const [wishList, setWishList] = useState([]);
 
     useEffect(() => {
         getCategories()
@@ -46,12 +45,7 @@ export default function ProductIndex() {
             })
     }, [])
 
-    useEffect(() => {
-        getWishList()
-            .then((res) => {
-                setWishList(res);
-            })
-    }, [])
+    
 
     useEffect(() => {
         setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
@@ -85,7 +79,7 @@ export default function ProductIndex() {
                     <div className="text-center mt-10">
                         {totalProductsFound} {totalProductsFound === 1 ? 'product' : 'products'} found
                     </div>
-                    <ProductList products={products} wishList={wishList} setWishList={setWishList} />
+                        <ProductList products={products} DisplayComponent={ProductCard}/>
                 </div>
             }
         </div>

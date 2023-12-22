@@ -6,17 +6,15 @@ import { FaHeart } from "react-icons/fa";
 import { TfiHeart } from "react-icons/tfi";
 
 import { IProduct } from "../../global_types";
-
 import { addToWishList, removeFromWishlist } from '@/utils/wishlist';
 
 
-
-export default function ProductCard({ product, inWishList, setWishList }: { product: IProduct, inWishList: boolean, setWishList: Dispatch<SetStateAction<never[]>> }) {
+export default function SmallProductCard({ product, inWishList, setWishList }: { product: IProduct, inWishList: boolean, setWishList: Dispatch<SetStateAction<never[]>> }) {
     const [hover, setHover] = useState(false);
     const router = useRouter()
 
     return (
-        <div className="mb-10 flex flex-col justify-evenly w-[250px] h-[400px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
+        <div className="mb-10 flex flex-col justify-evenly w-[150px] h-[300px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
             <div className="relative h-full w-full border-b">
                 <Link
                     key={product._id}
@@ -33,7 +31,7 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
                     />
                 </Link>
                 <div
-                    className="absolute bottom-5 right-5 flex justify-center items-center bg-white rounded-full shadow-lg p-4"
+                    className="absolute bottom-5 right-5 flex justify-center items-center bg-white rounded-full shadow-lg p-2"
                 >
                     {
                         //TODO : add onClick event to add to wishlist
