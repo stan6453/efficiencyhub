@@ -11,3 +11,8 @@ export interface Category {
     name: string;
     count: number;
 }
+
+export interface IStore{
+    name: string,
+    link: string,
+}

@@ -3,7 +3,7 @@
 import { useState, useEffect, useContext } from "react";
 
 import ProductList from "@/components/ProductList";
-import { SelectItems as SelectCategories } from "@/components/formElements";
+import { SelectItems as SelectCategories } from "@/components/formComponents";
 import { getWishList } from "../../../../../src/utils/wishlist";
 import searchContext from "@/utils/searchContext";
 import { setPro } from "@/utils/products";

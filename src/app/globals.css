@@ -48,6 +48,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.product-description {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  overflow-y: auto;
+  height: 70vh;
+ }
+
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -75,4 +85,8 @@ body {
     font-size: 18px;
     transition: ease-in-out 0.2s;
   }
+
+  /* .product-description {
+    height: 60vh;
+   } */
 }

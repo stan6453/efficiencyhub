@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import ProductCard from './ProductCard';
 import { Products } from '../../global_types';
 import { Dispatch, SetStateAction } from 'react';
@@ -9,15 +7,7 @@ export default function ProductList({ products, wishList, setWishList }: { produ
         <div className="bg-white">
             <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-wrap justify-evenly">
-                    {products.map((product) =>
-
-                        <Link
-                            key={product._id}
-                            href={`/product/${product._id}`}
-                        >
-                            <ProductCard product={product} inWishList={wishList.includes(product._id)} setWishList={setWishList} />
-                        </Link>
-                    )}
+                    {products.map((product) => <ProductCard key={product._id} product={product} inWishList={wishList.includes(product._id)} setWishList={setWishList} />)}
                 </div>
             </div>
         </div >

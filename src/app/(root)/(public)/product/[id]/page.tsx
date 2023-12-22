@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import DisplayProduct from "@/components/DisplayProduct";
+import DisplayProduct from "@/components/ProductPage";
 
 async function getProducts(id: string) {
   try {

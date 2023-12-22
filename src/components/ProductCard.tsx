@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { FaHeart } from "react-icons/fa";
 import { TfiHeart } from "react-icons/tfi";
@@ -32,15 +33,20 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
     return (
         <div className="mb-10 flex flex-col justify-evenly w-[250px] h-[400px] md:w-[250px] rounded-lg border border-gray-200 product-card relative">
             <div className="relative h-full w-full border-b">
-                <Image
-                    onMouseEnter={(e) => { setHover(true) }}
-                    onMouseLeave={(e) => { setHover(false) }}
-                    src={hover ? product.images[1] : product.images[0]}
-                    sizes="(max-width: 768px) 100px, (max-width: 1200px) 50vw, 33vw"
-                    fill={true}
-                    alt={`Image of ${product.name}`}
-                />
+                <Link
+                    key={product._id}
+                    href={`/product/${product._id}`}
+                >
 
+                    <Image
+                        onMouseEnter={(e) => { setHover(true) }}
+                        onMouseLeave={(e) => { setHover(false) }}
+                        src={hover ? product.images[1] : product.images[0]}
+                        sizes="(max-width: 768px) 100px, (max-width: 1200px) 50vw, 33vw"
+                        fill={true}
+                        alt={`Image of ${product.name}`}
+                    />
+                </Link>
                 <div
                     className="absolute bottom-5 right-5 flex justify-center items-center bg-white rounded-full shadow-lg p-4"
                 >
@@ -78,8 +84,13 @@ export default function ProductCard({ product, inWishList, setWishList }: { prod
             </div>
 
             <div className="mt-2 text-sm px-4 pb-3 pt-2">
-                <p className="text-gray-900 font-semibold">{product.name}</p>
-                <p className="text-gray-600">Category: {product.category}</p>
+                <Link
+                    key={product._id}
+                    href={`/product/${product._id}`}
+                >
+                    <p className="text-gray-900 font-semibold">{product.name}</p>
+                    <p className="text-gray-600">Category: {product.category}</p>
+                </Link>
             </div>
         </div>
     );
