@@ -69,7 +69,7 @@ export default function NavBar() {
                                 type="text"
                                 spellCheck="true"
                                 className={`w-full bg-gray-700 rounded-full ${searchString.length > 0? 'pl-8' :'pl-3' }  py-2 text-sm placeholder-gray-400 text-white`}
-                                placeholder="Search Products"
+                                placeholder="Search..."
                                 value={searchString}
                                 onChange={e => {
                                     setSearchString(e.target.value)
