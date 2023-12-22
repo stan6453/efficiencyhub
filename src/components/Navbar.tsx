@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { FaDoorClosed } from "react-icons/fa6";
 import { FaDoorOpen } from "react-icons/fa6";
 import { RiHeartFill } from "react-icons/ri";
@@ -24,10 +24,12 @@ import { setPro } from "@/utils/products";
 export default function NavBar() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
+    const inputRef = useRef(null)
 
     const [isNavVisible, setIsNavVisible] = useState(false);
     const [doorIconHovered, setDoorIconHovered] = useState(false);
-    const { searchString,
+    const {
+        searchString,
         setSearchString,
         page,
         size,
@@ -63,9 +65,10 @@ export default function NavBar() {
                     <div className='flex-1 w-25 max-w-lg z-10 mx-auto expand-search-input-container'>
                         <div className="relative mx-auto">
                             <input
+                            ref={inputRef}
                                 type="text"
                                 spellCheck="true"
-                                className="w-full bg-gray-700 rounded-full pl-8 py-2 text-sm placeholder-gray-400 text-white"
+                                className={`w-full bg-gray-700 rounded-full ${searchString.length > 0? 'pl-8' :'pl-3' }  py-2 text-sm placeholder-gray-400 text-white`}
                                 placeholder="Search Products"
                                 value={searchString}
                                 onChange={e => {
@@ -96,7 +99,11 @@ export default function NavBar() {
                                         <ImCancelCircle
                                             className='mx-auto'
                                             size='1.3rem'
-                                            onClick={() => setSearchString('')}
+                                            onClick={() =>{
+                                                (inputRef.current).focus()
+                                                setSearchString('')
+                                            }
+                                            }
                                         />
                                     </button>
                             }
