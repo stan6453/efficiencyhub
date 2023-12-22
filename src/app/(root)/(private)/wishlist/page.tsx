@@ -45,7 +45,7 @@ export default function Wishlist() {
                     <p>There is nothing in your wishlist</p>
                 </div>
                 :
-                <ProductList products={products} wishList={wishList} setWishList={setWishList} DisplayComponent={ProductCard} />
+                <ProductList products={products}  DisplayComponent={ProductCard} />
             }
         </div>
     );
