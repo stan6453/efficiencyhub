@@ -22,3 +22,16 @@ export function setPro({searchString,page, size, selectedCategories, setProducts
             setTotalProductsFound(res.count)
         })
 }
+
+
+export async function getProduct(id: string) {
+    try {
+      const url = new URL(`/api/products/${id}`, process.env.NEXT_PUBLIC_HOST)
+      let res: any = await fetch(url)
+      res = await res.json()
+      return res.body.product
+    } catch (err) {
+      console.log(err)
+      return null
+    }
+  }
