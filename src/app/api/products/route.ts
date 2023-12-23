@@ -12,12 +12,10 @@ export async function GET(request: NextRequest) {
 
     try {
         const products = await getProducts(query, page, size)
-        console.log(products)
         return Response.json(products)
     } catch (err) {
         console.log(err)
         return Response.json({ products: [], count: 0 })
-
     }
 
 }

@@ -17,7 +17,6 @@ export default function Wishlist() {
         () => {
             getWishlistProducts()
                 .then(res => {
-                    console.log(res)
                     setProducts(res)
                 })
         }, [])
