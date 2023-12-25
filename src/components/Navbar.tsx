@@ -17,7 +17,7 @@ import { usePathname, useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 import searchContext from "@/utils/searchContext";
-import { setPro } from "@/utils/products";
+import { getAndSetProducts } from "@/utils/products";
 
 
 
@@ -75,12 +75,12 @@ export default function NavBar() {
                                 onChange={(e: any) => {
                                     setSearchString(e.target.value)
                                     if (e.target.value.length === 0) {
-                                        setPro({ searchString: e.target.value, page, size, selectedCategories, setProducts, setTotalProductsFound })
+                                        getAndSetProducts({ searchString: e.target.value, page, size, selectedCategories, setProducts, setTotalProductsFound })
                                     }
                                 }}
                                 onKeyUp={e => {
                                     if (e.key === 'Enter') {
-                                        setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
+                                        getAndSetProducts({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
                                     }
                                 }}
                             />
@@ -91,11 +91,10 @@ export default function NavBar() {
                                     className='mx-auto'
                                     size='1.3rem'
                                     onClick={() => {
+                                        getAndSetProducts({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
                                         if (pathname !== '/products') {
                                             router.push('/products')
                                         }
-
-                                        setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
                                     }
                                     }
                                 />

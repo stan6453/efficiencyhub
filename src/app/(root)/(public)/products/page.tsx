@@ -6,7 +6,7 @@ import ProductList from "@/components/ProductList";
 import ProductCard from '../../../../components/ProductCard';
 import { SelectItems as SelectCategories } from "@/components/formComponents";
 import searchContext from "@/utils/searchContext";
-import { setPro } from "@/utils/products";
+import { getAndSetProducts } from "@/utils/products";
 
 async function getCategories() {
     try {
@@ -48,7 +48,7 @@ export default function ProductIndex() {
     
 
     useEffect(() => {
-        setPro({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
+        getAndSetProducts({ searchString, page, size, selectedCategories, setProducts, setTotalProductsFound })
     }, [selectedCategories, page])
 
     if (products === null) {
