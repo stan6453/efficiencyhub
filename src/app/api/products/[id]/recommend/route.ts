@@ -29,7 +29,7 @@ export async function GET(request: NextRequest,
         },
     ]);
 
-    // result = result.filter((product:any) => product._id.toString() !== params.id) 
+    result = result.filter((product:any) => product._id.toString() !== params.id) 
 
     return Response.json({ status: 200, body: result })
 }

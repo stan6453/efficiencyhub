@@ -3,7 +3,7 @@ import { IStore } from "../../global_types";
 
 function ListStores({ stores }: { stores: IStore[] }) {
     return (
-        <div className='flex flex-wrap justify-center'>
+        <div className='flex flex-wrap justify-evenly'>
             {
                 stores.map((store: IStore) => (
                         <div key={store.name + store.link}>
