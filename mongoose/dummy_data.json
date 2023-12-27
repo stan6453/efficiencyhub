@@ -1,17 +1,47 @@
 {
-    "name": "",
+    "name": "Effortless Manual Knife Sharpeners",
     "description": "",
+    "stores": [
+        {
+            "store": "amazon",
+            "link": ""
+        },
+        {
+            "store": "amazon",
+            "link": ""
+        }
+    ],
     "features": [
-        
+        "User-Friendly Experience",
+        "Safety First, Always",
+        "Premium Quality, Lifetime Durability",
+        "Precision at Your Fingertips"
     ],
     "tags": [
-       
+        "knife",
+        "sharpener",
+        "knife sharpener",
+        "knife sharpeners",
+        "knife sharpener manual",
+        "knife sharpener professional",
+        "knife sharpener kitchen",
+        "knife sharpener chef",
+        "knife sharpener 3 stage",
+        "knife sharpener tool",
+        "knife sharpener handheld"
     ],
     "images": [
-    
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687072/efficiencyhub/products/images/ml1ikptxlbcvg8nyeva0.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687073/efficiencyhub/products/images/glffh75nfqv2in947djs.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687074/efficiencyhub/products/images/qlhhbiu44enhtokbo8v8.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/mi77tn1cbxwtbjxl4lsv.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687075/efficiencyhub/products/images/g2qrlvh7ovyhbototcvx.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687075/efficiencyhub/products/images/wsbzysosdz9foztykykp.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/hkctq5kur6htsg1cy0yu.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/ays3bfobfmkq7fkabpfy.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/qghgcbyuusitgmlmb2l0.jpg"
     ],
-    "videos": [
-       
-    ],
-    "category": ""
+    "videos": [" https://vm.tiktok.com/ZM6De5af3/", "https://vm.tiktok.com/ZM6DeGoUG/"],
+    "category": "Kitchen",
+    "subcategory": "Cutlery & Knife Accessories."
 }

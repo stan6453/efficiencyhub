@@ -25,9 +25,7 @@ export default function ProductIndex() {
     const {
         searchString,
         page,
-        setPage,
         size,
-        setSize,
         selectedCategories,
         setSelectedCategories,
         products,

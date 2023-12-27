@@ -46,7 +46,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
                     <button className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-2xl" onClick={() => handleArrowClick('left')}>&lt;</button>
                     <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-2xl" onClick={() => handleArrowClick('right')}>&gt;</button>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between flex-wrap">
                     {images.map((img, index) => (
                         <Image
                             key={index}
