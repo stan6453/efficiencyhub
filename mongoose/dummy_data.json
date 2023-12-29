@@ -1,5 +1,5 @@
 {
-    "name": "Effortless Manual Knife Sharpeners",
+    "name": "Narwal Freo Robot Vacuum and Mop cleaner",
     "description": "",
     "stores": [
         {
@@ -12,36 +12,50 @@
         }
     ],
     "features": [
-        "User-Friendly Experience",
-        "Safety First, Always",
-        "Premium Quality, Lifetime Durability",
-        "Precision at Your Fingertips"
+        "Freo Mode Integrates vacuum and mop for optimal hands-free cleaning decisions.",
+        "Dirtsense Ultra Cle Intelligent detection of mop pad dirtiness, ensuring a precise cleaning process.",
+        "Smart Swing Moppi Corner-Traps technology and Smart Swing for reaching and tackling hard-to-reach areas.",
+        "Deeper and Safer Cle Patented high-speed spinning mop pads with adjustable downward force for various flooring types.",
+        "Three Mop Drying Mod Dual air tunnels with 40℃ gentle heat for thorough and sanitary drying after each use.",
+        "Advanced Connectivi Seamless integration with 2.4G WiFi and compatibility with Siri for convenient voice commands.",
+        "Whisper Quiet Operati 48dB Noise Control ensures a tranquil cleaning experience quieter than gentle rain.",
+        "Easy-to-Clean Washboa Simple maintenance with a user-friendly design for hassle-free cleaning.",
+        "Extra-large Dust B 480ml capacity dust bin for fewer interruptions and touch-free emptying.",
+        "1DirtSense Intelligen Sensor arrays and cutting-edge algorithms for intelligent analysis and targeted cleaning."
     ],
     "tags": [
-        "knife",
-        "sharpener",
-        "knife sharpener",
-        "knife sharpeners",
-        "knife sharpener manual",
-        "knife sharpener professional",
-        "knife sharpener kitchen",
-        "knife sharpener chef",
-        "knife sharpener 3 stage",
-        "knife sharpener tool",
-        "knife sharpener handheld"
+        "RobotVacuum",
+        "SmartHome",
+        "CleaningRobot",
+        "HomeAutomation",
+        "FloorCleaning",
+        "MopRobot",
+        "WirelessCleaning",
+        "AutomatedCleaning",
+        "IntelligentCleaning",
+        "SmartCleaning",
+        "SmartCleaningRobot",
+        "SmartCleaningDevice",
+        "SmartCleaningAppliance",
+        "SmartCleaningGadget",
+        "Cleaning",
+        "clean"
     ],
     "images": [
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687072/efficiencyhub/products/images/ml1ikptxlbcvg8nyeva0.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687073/efficiencyhub/products/images/glffh75nfqv2in947djs.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687074/efficiencyhub/products/images/qlhhbiu44enhtokbo8v8.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/mi77tn1cbxwtbjxl4lsv.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687075/efficiencyhub/products/images/g2qrlvh7ovyhbototcvx.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687075/efficiencyhub/products/images/wsbzysosdz9foztykykp.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/hkctq5kur6htsg1cy0yu.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/ays3bfobfmkq7fkabpfy.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/qghgcbyuusitgmlmb2l0.jpg"
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778013/efficiencyhub/products/images/eg3pfoxmrdrt34awdusp.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778012/efficiencyhub/products/images/qpr2sh8oxykft4gfxvef.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uixyv8etwcnyh1cg8wbg.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/i3vhitydxdg0qmr8oxuc.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uvkq06ezx06xzdkahnkv.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/d0ejovgpusqjis2g082m.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/kh9pqafqtjrovxck9on9.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778009/efficiencyhub/products/images/uwzozhvuzg6qxip1bqqm.jpg"
     ],
-    "videos": [" https://vm.tiktok.com/ZM6De5af3/", "https://vm.tiktok.com/ZM6DeGoUG/"],
-    "category": "Kitchen",
-    "subcategory": "Cutlery & Knife Accessories."
+    "videos": [
+        "https://www.tiktok.com/@giftgenius/video/7302888336979561733",
+        "https://www.tiktok.com/@bettergifts/video/7302889138267753734",
+        "https://www.tiktok.com/@mechanicallyincleyend/video/7302948122009881887",
+        "https://www.tiktok.com/@devdoesreviews/video/7306958743739190560"
+    ],
+    "category": "Cleaning Supplies"
 }

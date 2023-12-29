@@ -12,7 +12,7 @@ const ProductSchema = new mongoose.Schema(
         subcategory: { type: String},
         price: { type: Number },
         stores: [{
-            store: String,
+            name: String,
             link: String
         }]
     },

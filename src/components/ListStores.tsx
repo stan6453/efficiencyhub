@@ -1,16 +1,29 @@
 import { memo } from "react";
+
 import { IStore } from "../../global_types";
+import StoreLink from "./StoreLink";
 
 function ListStores({ stores }: { stores: IStore[] }) {
     return (
-        <div className='flex flex-wrap justify-evenly'>
+        <div className='flex flex-wrap justify-evenly items-stretch'>
             {
-                stores.map((store: IStore) => (
-                        <div key={store.name + store.link}>
-                            <div>{store.name}</div>
-                            <div dangerouslySetInnerHTML={{ __html: store.link }}></div>
-                        </div>
-                    )
+                stores.map((store: IStore) => {
+                    if (store.name === 'amazon') {
+                        return (
+                            <div key={store.name + store.link}>
+                                <div dangerouslySetInnerHTML={{ __html: store.link }}></div>
+                            </div>
+                        )
+                    }
+                    else if (store.name === 'jumia') {
+                        return (
+                            <div key={store.link} >
+                                <StoreLink store={store} />
+                            </div>
+                        )
+                    }
+
+                }
                 )
             }
         </div>

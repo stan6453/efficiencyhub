@@ -33,7 +33,7 @@
   "subcategory": "surveillance",
   "stores": [
     {
-      "store": "amazon",
+      "name": "amazon",
       "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B09ZY9THZ1&asins=B09ZY9THZ1&linkId=99e4a79af06b7f5498d54b79d958fd85&show_border=true&link_opens_in_new_window=true\"></iframe>"
     }
   ]
@@ -63,10 +63,11 @@
   "category": "jewelry",
   "stores": [
     {
-      "store": "amazon",
+      "name": "amazon",
       "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B09YHHJCYB&asins=B09YHHJCYB&linkId=6e02acce221f6f067f66bc830621a46d&show_border=true&link_opens_in_new_window=true\"></iframe>"
     }
-  ]
+  ],
+  "subcategory": "Cleaning Supplies"
 },
 {
   "_id": {
@@ -76,11 +77,11 @@
   "description": "The ultimate solution to transform your kitchen knives into precision tools, ensuring every cut is a masterpiece! This revolutionary sharpener is designed to elevate your culinary experience, making it safer, more efficient, and truly enjoyable.\n\n🔪 **Precision in Every Slot:**\nOur 3-slot system is a game-changer in the world of knife sharpening. Begin with the 1st diamond sharpening rod, delicately repairing and straightening damaged blades. Move to the 2nd slot for coarse sharpening, restoring the V-shape with tungsten steel. The magic happens in the 3rd slot, fine-tuning your blade to a clean polish with micron-sized diamond abrasives.\n\n👌 **User-Friendly Experience:**\nNo more struggles with complicated sharpening tools! The ergonomic handle ensures ease of use, catering to both right and left-handed users. In just a few simple steps, place your knife blade in each slot and effortlessly pull through for fast, effective sharpening. Cooking precision has never been this accessible.\n\n🧤 **Safety First, Always:**\nYour safety is our priority! The non-slip base offers comfortable control, while the included cut-resistant glove provides an extra layer of protection. Sharpen with confidence, knowing that Kitchellence is committed to keeping your hands safe.\n\n💎 **Premium Quality, Lifetime Durability:**\nCrafted from solid ABS plastic, our professional knife sharpener is not only strong and durable but also designed to last a lifetime. Your knives will regain their former glory, looking and performing like new. Experience the joy of cooking with precision and style.\n\n🛒 **Shop Risk-Free:**\nWe're so confident in the 3-Step Knife Sharpener that we offer an unconditional money-back guarantee. If you're not completely satisfied, return the product within 30 days for a full refund. Your satisfaction is our commitment.\n\n🔪 **Precision at Your Fingertips:**\nOur sharpener boasts 100% diamond abrasives in all three stages. The advanced CrissCross sharpening technology delivers a razor-sharp, burr-free edge effortlessly. It works wonders on straight edge, serrated, sports, and pocket knives, ensuring a durable and arch-shaped edge.\n\nSay goodbye to dull knives and hello to a world of culinary precision with the Kitchellence 3-Step Knife Sharpener. Elevate your cooking experience – sharp knives, safe hands, and unparalleled convenience await!",
   "stores": [
     {
-      "store": "amazon",
+      "name": "amazon",
       "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width: 120px;height: 240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\" //ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B079WWFZY6&asins=B079WWFZY6&linkId=44a371e2ff7f051218fe8a7074db903b&show_border=true&link_opens_in_new_window=true\"></iframe>"
     },
     {
-      "store": "amazon",
+      "name": "amazon",
       "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width: 120px;height: 240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\" //ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B007IVBET0&asins=B007IVBET0&linkId=a35780d319dad4ea3944b477f7e32e2a&show_border=true&link_opens_in_new_window=true\"></iframe>"
     }
   ],
@@ -118,6 +119,179 @@
     "https://www.tiktok.com/@gonzalezlazada/video/7094511836225228059",
     "https://www.tiktok.com/@5ducks.shop/video/7299074813920906528"
   ],
-  "category": "Kitchen",
-  "subcategory": "Cutlery & Knife Accessories."
+  "category": "kitchen",
+  "subcategory": "Cutlery & Knife Accessories"
+},
+{
+  "_id": {
+    "$oid": "658c47a5d70772956ead6883"
+  },
+  "name": "Electric Knife Sharpeners",
+  "description": "Introducing the Chef'sChoice Professional Electric Knife Sharpener with 100-Percent Diamond Abrasives and Precision Angle Guides for Straight Edge and Serrated Knives, 3-Stage – the ultimate solution to elevate your kitchen experience and transform your knives into precision-cutting tools. Say goodbye to dull blades and hello to effortlessly sharp edges with this compact and powerful electric sharpener.\r\n\r\n    **Unleash the Power of Diamonds:**\r\n    Crafted with 100-percent diamond abrasives, the hardest natural substance on earth, our patented sharpening system ensures that your knives are sharpened faster and easier than ever before. The three-stage EdgeSelect system offers versatility for every cutting task, providing the perfect edge for straight-edge and serrated knives alike.\r\n    \r\n    **Precision at Every Stage:**\r\n    Built-in precision angle guides in all three stages eliminate guesswork, guaranteeing consistently sharp edges every time. The first stage sharpens straight-edge knives with medium diamond abrasives, while the second and third stages create distinct finishes based on your cutting needs – micro-serrated or polished. The result? A longer-lasting, arch-shaped edge that enhances cutting performance.\r\n    \r\n    **Versatility Redefined:**\r\n    This electric sharpener isn't just for the kitchen; it's designed to sharpen all 20-degree class knives, including household, sports, and pocket knives. The advanced, patented flexible spring guides automatically adjust to ensure accurate control of the sharpening angle, making it easy for you to achieve professional results at home.\r\n    \r\n    **Effortless Conversion:**\r\n    Transform traditional 20-degree factory edges into high-performance Trizor XV 15-degree edges with ease. The 15XV is equipped to handle the conversion, offering a razor-sharp edge that combines the strength and durability of the Trizor edge with flawless, ultra-sharp 15-degree XV technology.\r\n    \r\n    **User-Friendly Design:**\r\n    With a single on/off button and stabilizing rubber feet that secure the unit to your work surface, this sharpener is as easy to use as it is effective. The noise level is between 65 dB and 75 dB, ensuring a quiet and efficient sharpening process.\r\n    \r\n    **Time-Saving Technology:**\r\n    Experience the efficiency of the 15XV – the time required for initial sharpening is approximately 1 minute, and resharpening takes just about 10 seconds. Spend less time sharpening and more time enjoying the precision and ease of cutting with razor-sharp knives.\r\n    \r\n    Upgrade your kitchen arsenal with the 15XV 3-Stage Professional Knife Sharpener – where innovation meets precision for a cutting-edge culinary experience. Order now and rediscover the joy of effortless, precise cutting in every kitchen endeavor.",
+  "stores": [
+    {
+      "name": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B000CSK0DM&asins=B000CSK0DM&linkId=e1c24e28d830edbdef8d4893e2288591&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    },
+    {
+      "name": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B0018RSEMU&asins=B0018RSEMU&linkId=5748d7760ca6c3646e06de7e13533e49&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    }
+  ],
+  "features": [
+    "ease of use",
+    "versatility",
+    "time-saving technology",
+    "user-friendly design",
+    "precision at every stage",
+    "effortless conversion"
+  ],
+  "tags": [
+    "knife",
+    "sharpener",
+    "knife sharpener",
+    "knife sharpeners",
+    "knife sharpener professional",
+    "knife sharpener kitchen",
+    "knife sharpener chef",
+    "knife sharpener tool",
+    "knife sharpener handheld",
+    "knife sharpener electric",
+    "knife sharpener diamond"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691768/efficiencyhub/products/images/hovarhzpyu6otncdk2km.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691767/efficiencyhub/products/images/z98i18mjbamw3culjccm.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691766/efficiencyhub/products/images/rtthbwtpocpkczq4zaex.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691765/efficiencyhub/products/images/v6gbt6kl0hztlona6rvv.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691765/efficiencyhub/products/images/pmiiywqlyqbyb6lxfnqu.jpg"
+  ],
+  "videos": [
+    "https://www.tiktok.com/@themacrokitchen/video/7069393200271723822",
+    "https://www.tiktok.com/@raydasharpener/video/7292730268832582914"
+  ],
+  "category": "kitchen",
+  "subcategory": "Cutlery & Knife Accessories"
+},
+{
+  "_id": {
+    "$oid": "658d8a84d70772956ead6888"
+  },
+  "name": "Magic Scrub Broom",
+  "description": "Introducing the Multifunctional Magic Broom – a revolutionary cleaning solution designed to transform your household chores into a breeze! This 3-in-1 marvel combines the powers of a sweeper, scraper, and squeegee to handle any mess you throw at it, making it an essential addition to your cleaning arsenal.\n\n**Versatile Cleaning on All Surfaces:**\nNo matter the surface – hardwood floors, tile, carpet, rugs, or even windows and shower walls – the Multifunctional Magic Broom is designed to tackle every mess. Its adjustable design ensures that you can effortlessly transition from cleaning your living room to your kitchen, bathroom, shower, swimming pool, garage, car, and even windows. This broom is a true multitasker, providing the perfect cleaning tool for every room in your home.\n\n**Detachable Long-Reach Handle:**\nThe detachable design of the Multifunctional Magic Broom goes beyond standard cleaning tools. Whether you choose to use the shorter brush for quick tasks or attach the additional handle for extended reach, you'll effortlessly reach higher places without straining. Say goodbye to the hassle of hard-to-reach areas; this broom adapts to your cleaning needs.\n\n**Exceptional Durability and Cleaning Power:**\nCrafted from premium materials like ABS, stainless steel, and silicone, this broom is built to last. The TPR broom head fits seamlessly on any surface, leaving no dust behind and preventing scratches. Its innovative design ensures that hair won't get tangled up, making cleaning a breeze. Invest in a durable, long-lasting cleaning tool that stands up to the toughest messes.\n\n**Ergonomic Design for Floor-to-Ceiling Cleaning:**\nCleaning should never be a pain, and with the ergonomic design and extended length of 126cm/49.6\", it's not. Reach high windows, cupboards, and ceilings effortlessly. The 180-degree swivel head allows you to touch any corner, while the broom head can be angled to easily sweep underneath furniture. Say goodbye to wrist strain and fatigue – cleaning has never been this comfortable.\n\n**Save Time, Effort, and Space:**\nThe Multifunctional Magic Broom is more than just a cleaning tool; it's a time-saving, effort-reducing, and space-efficient solution. With its 3-in-1 functionality, adjustable steering, and strong, durable construction, this broom will become your go-to companion for all your cleaning needs.\n\nUpgrade your cleaning routine with the Multifunctional Magic Broom – the ultimate cleaning solution that promises to make your life easier. Order yours now and experience the magic of effortless cleaning!",
+  "stores": [
+    {
+      "name": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B0CCTN4LMY&asins=B0CCTN4LMY&linkId=a2253e75a037a8c0e0a22b949db3d95e&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    },
+    {
+      "name": "amazon",
+      "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B0CM99PQCT&asins=B0CM99PQCT&linkId=78ca4bcafcd766ec9de41dd5168f4e76&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    }
+  ],
+  "features": [
+    "3-in-1sweeper, scraper, and squeegee multifunctional",
+    "180 Degree Adjustable Steering, can be adjusted according to the required length you need",
+    "Strong and durable, Can easily remove hair, water, all the dirt, etc",
+    "Saving you time, effort, and space"
+  ],
+  "tags": [
+    "cleaning",
+    "clean",
+    "magic broom",
+    "broom",
+    "scrub",
+    "sweeper",
+    "sweep",
+    "clean",
+    "dirt",
+    "hair",
+    "water"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695588/efficiencyhub/products/images/f8svgborq6msmqug6wvy.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695589/efficiencyhub/products/images/fgsaifavgovqvrd0sbtk.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695589/efficiencyhub/products/images/zir8pei4gg6t7o5so71j.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695586/efficiencyhub/products/images/jfcpgit7fbuimhb8xlf5.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695586/efficiencyhub/products/images/nzdjopyxojnbpf4stptz.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695587/efficiencyhub/products/images/qx1cp22fppz4aaouj31c.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695585/efficiencyhub/products/images/khlfmtabc5blkikq0v8x.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695571/efficiencyhub/products/images/qxv5kvvius0jcxny8dnz.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695571/efficiencyhub/products/images/ke5pmsdongbeo0yznfjd.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695571/efficiencyhub/products/images/nhcp8mvgzd2eq7dlt4u6.jpg"
+  ],
+  "videos": [
+    "https://www.tiktok.com/@magicscrubroom/video/7301510220046552350",
+    "https://www.tiktok.com/@magicscrubroom/video/7293220695058713886",
+    "https://www.tiktok.com/@magicscrubroom/video/7293712333740821791"
+  ],
+  "category": "Cleaning Supplies"
+},
+{
+  "_id": {
+    "$oid": "658d9808d70772956ead6889"
+  },
+  "name": "Narwal Freo Robot Vacuum and Mop cleaner",
+  "description": "🌟 Introducing the Narwal Freo Robot Vacuum and Mop Combo: Your Gateway to Effortless Cleaning Bliss! 🌟\n\nAre you ready to elevate your home cleaning experience to unprecedented levels of convenience and efficiency? Say goodbye to mundane chores and welcome the future of automated cleanliness with the Narwal Freo! Let us unveil the reasons why this cutting-edge device is set to revolutionize your living space:\n\n🟣 **Freo Mode: Hands-free, Mind-free Cleaning**\nTired of the constant hassle of cleaning decisions? Narwal Freo takes charge with its innovative Freo Mode, combining vacuuming and mopping in perfect harmony. This autonomous cleaning maestro not only frees up your hands but liberates your mind from the burden of household cleaning decisions.\n\n🟣 **Dirtsense Ultra Clean: Scientific Precision**\nBid farewell to guesswork! Freo's Dirtsense technology intelligently gauges the cleanliness of your mop pads and takes action accordingly. High-speed spinning, combined with the perfect mix of water and floor cleaner, ensures a scientific approach to maintaining spotless floors.\n\n🟣 **Smart Swing Mopping: Reaching the Unreachable**\nNo more neglected corners! Freo's Corner-Traps technology activates Smart Swing to tackle dust and stains along walls and baseboards that other robots miss. Your entire floor, including those tricky corners, gets the attention it deserves.\n\n🟣 **Deeper and Safer Clean: Triangular Perfection**\nPreserve the integrity of your floors with the patented high-speed spinning mop pads. With a seamless triangular design and adjustable downward force, Freo leaves no streaks behind, ensuring a deep, yet safe, clean on various flooring types.\n\n🟣 **Three Mop Drying Modes: Sanitation Redefined**\nFreo ensures every mopping session is hygienic and hassle-free. Dual air tunnels with gentle heat at 40℃ guarantee that your mop pads are thoroughly dried after each use. Enjoy simplicity and cleanliness with every cleaning cycle.\n\n🌐 **Advanced Connectivity: Your Convenience First**\nThe Narwal Freo seamlessly integrates with your lifestyle. With 2.4G WiFi support and compatibility with Siri, enjoy the ease of convenient voice commands for starting, pausing, and stopping cleaning sessions. The user-friendly setup ensures stability and hassle-free operation.\n\n🔇 **Whisper Quiet Operation: Silence that Speaks Volumes**\nExperience tranquility with Freo's 48dB Noise Control, quieter than a gentle rain. Enjoy the benefits of a clean home without sacrificing peace and quiet.\n\n🧼 **Easy-to-Clean Washboard and Extra-large Dust Bin: Unmatched User-Friendliness**\nMaintaining your Freo is a breeze with the easy-to-clean washboard design. The extra-large 480ml dust bin ensures fewer interruptions, while touch-free emptying adds an extra layer of convenience to your cleaning routine.\n\n🤖 **DirtSense Intelligence: A Smarter Clean**\nEmpowered with sensor arrays and cutting-edge algorithms, Freo analyzes and targets dirt with unprecedented accuracy. Receive detailed cleaning reports, so you're always in the know about the cleanliness status of your home.\n\nEmbrace the future of home cleaning with the Narwal Freo - where innovation meets simplicity, and your living space is transformed into a haven of cleanliness. Make the wise choice today and experience the magic of Freo in your home! 🌟",
+  "stores": [
+    {
+      "name": "amazon",
+      "link": ""
+    },
+    {
+      "name": "amazon",
+      "link": ""
+    },
+    {
+      "name": "jumia",
+      "link": "https://kol.jumia.com/api/click/custom/34d684cb-8ad3-430c-8265-31de187a21f0/306ad549-764c-349e-a497-cdd2d98c349a?r=https%3A%2F%2Fwww.jumia.com.ng%2Finfinix-hot-30i-6.56-4gb-ram128gb-rom-android-12-black-229086647.html"
+    }
+  ],
+  "features": [
+    "Freo Mode Integrates vacuum and mop for optimal hands-free cleaning decisions.",
+    "Dirtsense Ultra Cle Intelligent detection of mop pad dirtiness, ensuring a precise cleaning process.",
+    "Smart Swing Moppi Corner-Traps technology and Smart Swing for reaching and tackling hard-to-reach areas.",
+    "Deeper and Safer Cle Patented high-speed spinning mop pads with adjustable downward force for various flooring types.",
+    "Three Mop Drying Mod Dual air tunnels with 40℃ gentle heat for thorough and sanitary drying after each use.",
+    "Advanced Connectivi Seamless integration with 2.4G WiFi and compatibility with Siri for convenient voice commands.",
+    "Whisper Quiet Operati 48dB Noise Control ensures a tranquil cleaning experience quieter than gentle rain.",
+    "Easy-to-Clean Washboa Simple maintenance with a user-friendly design for hassle-free cleaning.",
+    "Extra-large Dust B 480ml capacity dust bin for fewer interruptions and touch-free emptying.",
+    "1DirtSense Intelligen Sensor arrays and cutting-edge algorithms for intelligent analysis and targeted cleaning."
+  ],
+  "tags": [
+    "RobotVacuum",
+    "SmartHome",
+    "CleaningRobot",
+    "HomeAutomation",
+    "FloorCleaning",
+    "MopRobot",
+    "WirelessCleaning",
+    "AutomatedCleaning",
+    "IntelligentCleaning",
+    "SmartCleaning",
+    "SmartCleaningRobot",
+    "SmartCleaningDevice",
+    "SmartCleaningAppliance",
+    "SmartCleaningGadget",
+    "Cleaning",
+    "clean"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778013/efficiencyhub/products/images/eg3pfoxmrdrt34awdusp.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778012/efficiencyhub/products/images/qpr2sh8oxykft4gfxvef.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uixyv8etwcnyh1cg8wbg.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/i3vhitydxdg0qmr8oxuc.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uvkq06ezx06xzdkahnkv.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/d0ejovgpusqjis2g082m.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/kh9pqafqtjrovxck9on9.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778009/efficiencyhub/products/images/uwzozhvuzg6qxip1bqqm.jpg"
+  ],
+  "videos": [
+    "https://www.tiktok.com/@giftgenius/video/7302888336979561733",
+    "https://www.tiktok.com/@bettergifts/video/7302889138267753734",
+    "https://www.tiktok.com/@mechanicallyincleyend/video/7302948122009881887",
+    "https://www.tiktok.com/@devdoesreviews/video/7306958743739190560"
+  ],
+  "category": "Cleaning Supplies"
 }]

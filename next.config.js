@@ -12,9 +12,14 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'asset.cloudinary.com',
-            },{
+            },
+            {
                 protocol: 'https',
                 hostname: 'placehold.co',
+            },
+            {
+                protocol: 'https',
+                hostname: 'ng.jumia.is',
             },
         ],
     }
