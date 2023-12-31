@@ -65,6 +65,10 @@
     {
       "name": "amazon",
       "link": "<iframe sandbox=\"allow-popups allow-scripts allow-modals allow-forms allow-same-origin\" style=\"width:120px;height:240px;\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mobile0671f81-20&language=en_US&marketplace=amazon&region=US&placement=B09YHHJCYB&asins=B09YHHJCYB&linkId=6e02acce221f6f067f66bc830621a46d&show_border=true&link_opens_in_new_window=true\"></iframe>"
+    },
+    {
+      "name": "jumia",
+      "link": "https://kol.jumia.com/api/click/custom/34d684cb-8ad3-430c-8265-31de187a21f0/306ad549-764c-349e-a497-cdd2d98c349a?r=https%3A%2F%2Fwww.jumia.com.ng%2Fgeneric-mini-portable-sonic-wave-cleaner-high-frequency-252281716.html%3Fgad_source%3D1%26gclid%3DCjwKCAiA-bmsBhAGEiwAoaQNmhgLSqCuuW5zg9URrDaAH5MF5O_O8_MdaDhNp3XSGoEsxN16Dm244BoCx6IQAvD_BwE"
     }
   ],
   "subcategory": "Cleaning Supplies"
@@ -116,8 +120,8 @@
     "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703687076/efficiencyhub/products/images/mi77tn1cbxwtbjxl4lsv.jpg"
   ],
   "videos": [
-    "https://www.tiktok.com/@gonzalezlazada/video/7094511836225228059",
-    "https://www.tiktok.com/@5ducks.shop/video/7299074813920906528"
+    "https://www.tiktok.com/embed/7094511836225228059",
+    "https://www.tiktok.com/embed/7299074813920906528"
   ],
   "category": "kitchen",
   "subcategory": "Cutlery & Knife Accessories"
@@ -167,8 +171,8 @@
     "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703691765/efficiencyhub/products/images/pmiiywqlyqbyb6lxfnqu.jpg"
   ],
   "videos": [
-    "https://www.tiktok.com/@themacrokitchen/video/7069393200271723822",
-    "https://www.tiktok.com/@raydasharpener/video/7292730268832582914"
+    "https://www.tiktok.com/embed/7069393200271723822",
+    "https://www.tiktok.com/embed/7292730268832582914"
   ],
   "category": "kitchen",
   "subcategory": "Cutlery & Knife Accessories"
@@ -221,9 +225,9 @@
     "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703695571/efficiencyhub/products/images/nhcp8mvgzd2eq7dlt4u6.jpg"
   ],
   "videos": [
-    "https://www.tiktok.com/@magicscrubroom/video/7301510220046552350",
-    "https://www.tiktok.com/@magicscrubroom/video/7293220695058713886",
-    "https://www.tiktok.com/@magicscrubroom/video/7293712333740821791"
+    "https://www.tiktok.com/embed/7301510220046552350",
+    "https://www.tiktok.com/embed/7293220695058713886",
+    "https://www.tiktok.com/embed/7293712333740821791"
   ],
   "category": "Cleaning Supplies"
 },
@@ -241,10 +245,6 @@
     {
       "name": "amazon",
       "link": ""
-    },
-    {
-      "name": "jumia",
-      "link": "https://kol.jumia.com/api/click/custom/34d684cb-8ad3-430c-8265-31de187a21f0/306ad549-764c-349e-a497-cdd2d98c349a?r=https%3A%2F%2Fwww.jumia.com.ng%2Finfinix-hot-30i-6.56-4gb-ram128gb-rom-android-12-black-229086647.html"
     }
   ],
   "features": [
@@ -288,10 +288,82 @@
     "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778009/efficiencyhub/products/images/uwzozhvuzg6qxip1bqqm.jpg"
   ],
   "videos": [
-    "https://www.tiktok.com/@giftgenius/video/7302888336979561733",
-    "https://www.tiktok.com/@bettergifts/video/7302889138267753734",
-    "https://www.tiktok.com/@mechanicallyincleyend/video/7302948122009881887",
-    "https://www.tiktok.com/@devdoesreviews/video/7306958743739190560"
+    "https://www.tiktok.com/embed/7302888336979561733",
+    "https://www.tiktok.com/embed/7302889138267753734",
+    "https://www.tiktok.com/embed/7302948122009881887",
+    "https://www.tiktok.com/embed/7306958743739190560"
   ],
   "category": "Cleaning Supplies"
+},
+{
+  "_id": {
+    "$oid": "65913271d70772956ead688f"
+  },
+  "name": "Low oil Air Fryers",
+  "description": "🌿 Welcome to a Culinary Revolution: Unleash the Power of the Ultimate Air Fryer! 🌿\n\nAt the heart of our Ultimate Air Fryer lies a commitment to transforming your daily cooking experience, making it healthier, simpler, and undeniably delicious.\n\nAre you ready to revolutionize the way you cook, indulge in guilt-free meals, and kickstart your journey to a healthier lifestyle? Look no further than the Air Fryer, a culinary game-changer that combines innovation, efficiency, and Californian flair. Here's why this must-have kitchen companion will elevate your culinary experience:\n\n🍃 **Health-Conscious Cooking:**\n   Embrace a lifestyle where flavor and health coexist. Our air fryer utilizes advanced cooking technology, circulating hot air to achieve that perfect crisp without drowning your meals in excess oil. Enjoy the satisfaction of indulgence without compromising your well-being.\n\nCut down your oil consumption by a whopping 85% with our state-of-the-art 360-degree rapid heat circulation technology. Savor the same crispy textures as traditional deep frying without compromising on flavor or indulgence.\n\n🌮 **Versatility Redefined:**\n   The Ultimate Air Fryer is more than just an appliance; it's a culinary ally. From classic fries to exotic recipes, its versatile nature allows you to experiment with an array of dishes. Revitalize your menu without the complexity – this air fryer simplifies your journey into the world of flavors.\n\n⏱️ **Time Efficiency Unleashed:**\n   Busy lives demand smarter solutions. With rapid hot air circulation, our air fryer not only preserves nutrients but also cooks your favorite dishes in record time. Reclaim precious moments in your day without sacrificing the joy of a home-cooked meal.\n\nEnjoy meals in minutes with industry-leading temperatures up to 450°F, boasting a 20% faster heating efficiency. Say goodbye to lengthy prep times and hello to quick, delicious meals that fit your busy lifestyle.\n\n🌱 **Space-Saving Brilliance:**\n   Modern kitchens thrive on efficiency and elegance. The compact design of the Ultimate Air Fryer seamlessly integrates into your space, ensuring it becomes a functional and aesthetic addition to your cooking haven.\n\n🧽 **Effortless Cleanup:**\n   We understand the struggle of post-cooking cleanup. That's why our air fryer features a non-stick, dishwasher-safe basket – making the aftermath as stress-free as the cooking process itself. No more wrestling with stubborn grease or endless scrubbing sessions.\n\n🎁 **Embark on a Healthier, More Flavorful Path:**\n   The Ultimate Air Fryer isn't just an appliance; it's a catalyst for a positive culinary shift. Elevate your kitchen, transform your meals, and embrace the joy of wholesome cooking.\n\n🌿 **Discover a New Culinary Paradigm - Order Your Ultimate Air Fryer Today!** 🌿",
+  "stores": [
+    {
+      "store": "amazon",
+      "link": ""
+    },
+    {
+      "store": "amazon",
+      "link": ""
+    },
+    {
+      "link": "https://kol.jumia.com/api/click/custom/34d684cb-8ad3-430c-8265-31de187a21f0/306ad549-764c-349e-a497-cdd2d98c349a?r=https%3A%2F%2Fwww.jumia.com.ng%2Fmlp-air-fryer%2F",
+      "name": "jumia"
+    }
+  ],
+  "features": [
+    "Rapid hot air circulation for quick and even cooking.",
+    "Healthier frying with up to 75% less fat compared to traditional frying methods.",
+    "Versatility to fry, roast, bake, and grill a variety of foods.",
+    "Adjustable temperature control for precise cooking.",
+    "Compact design for space-saving on kitchen countertops.",
+    "Easy-to-clean removable and dishwasher-safe parts.",
+    "Timer function for convenient cooking with automatic shut-off.",
+    "Odorless cooking experience with minimal oil splatter.",
+    "Energy-efficient operation with faster cooking times.",
+    "LCD or digital display for user-friendly settings."
+  ],
+  "tags": [
+    "Kitchen Appliance",
+    "Cooking Technology",
+    "Healthy Eating",
+    "Quick Cooking",
+    "Time Saving",
+    "Easy Cleaning",
+    "Low Fat Cooking",
+    "Kitchen Gadgets",
+    "Versatile Cooking",
+    "Home Cooking",
+    "Air Fryer Recipes",
+    "Energy Efficient",
+    "Meal Prep",
+    "Crispy Results",
+    "Smart Kitchen",
+    "Convenient Cooking",
+    "Space-Saving",
+    "Dishwasher Safe",
+    "Appliance Innovation"
+  ],
+  "images": [
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011807/efficiencyhub/products/images/kzmsg8kb7gqquuobstxb.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011817/efficiencyhub/products/images/atnut7zd42ofswnk5i1f.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011826/efficiencyhub/products/images/ssarljy6bgoowhtuiup0.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011827/efficiencyhub/products/images/jzwxlfduxrw0qzeatvcy.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011840/efficiencyhub/products/images/jrittzhcyoeftoxhf4ns.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011842/efficiencyhub/products/images/xmoio756bmaahytbtzec.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011843/efficiencyhub/products/images/axiif5u0wpkdumbrfwlk.jpg",
+    "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011847/efficiencyhub/products/images/rcwfc3rzqvvsuibafc58.jpg"
+  ],
+  "videos": [
+    "https://www.tiktok.com/embed/7282790167646162218",
+    "https://www.tiktok.com/embed/7238954189936807211",
+    "https://www.tiktok.com/embed/7165870672546172166",
+    "https://www.tiktok.com/embed/7121408053005602053",
+    "https://www.tiktok.com/embed/7259440238408355078"
+  ],
+  "category": "kitchen"
 }]

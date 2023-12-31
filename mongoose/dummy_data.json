@@ -1,61 +1,69 @@
 {
-    "name": "Narwal Freo Robot Vacuum and Mop cleaner",
+    "name": "Low oil, Air Fryers",
     "description": "",
     "stores": [
         {
-            "store": "amazon",
+            "name": "amazon",
             "link": ""
         },
         {
-            "store": "amazon",
+            "name": "amazon",
             "link": ""
+        },
+        {
+            "name": "jumia",
+            "link": "https://kol.jumia.com/api/click/custom/34d684cb-8ad3-430c-8265-31de187a21f0/306ad549-764c-349e-a497-cdd2d98c349a?r=https%3A%2F%2Fwww.jumia.com.ng%2Fmlp-air-fryer%2F"
         }
     ],
     "features": [
-        "Freo Mode Integrates vacuum and mop for optimal hands-free cleaning decisions.",
-        "Dirtsense Ultra Cle Intelligent detection of mop pad dirtiness, ensuring a precise cleaning process.",
-        "Smart Swing Moppi Corner-Traps technology and Smart Swing for reaching and tackling hard-to-reach areas.",
-        "Deeper and Safer Cle Patented high-speed spinning mop pads with adjustable downward force for various flooring types.",
-        "Three Mop Drying Mod Dual air tunnels with 40℃ gentle heat for thorough and sanitary drying after each use.",
-        "Advanced Connectivi Seamless integration with 2.4G WiFi and compatibility with Siri for convenient voice commands.",
-        "Whisper Quiet Operati 48dB Noise Control ensures a tranquil cleaning experience quieter than gentle rain.",
-        "Easy-to-Clean Washboa Simple maintenance with a user-friendly design for hassle-free cleaning.",
-        "Extra-large Dust B 480ml capacity dust bin for fewer interruptions and touch-free emptying.",
-        "1DirtSense Intelligen Sensor arrays and cutting-edge algorithms for intelligent analysis and targeted cleaning."
+        "Rapid hot air circulation for quick and even cooking.",
+        "Healthier frying with up to 75% less fat compared to traditional frying methods.",
+        "Versatility to fry, roast, bake, and grill a variety of foods.",
+        "Adjustable temperature control for precise cooking.",
+        "Compact design for space-saving on kitchen countertops.",
+        "Easy-to-clean removable and dishwasher-safe parts.",
+        "Timer function for convenient cooking with automatic shut-off.",
+        "Odorless cooking experience with minimal oil splatter.",
+        "Energy-efficient operation with faster cooking times.",
+        "LCD or digital display for user-friendly settings."
     ],
     "tags": [
-        "RobotVacuum",
-        "SmartHome",
-        "CleaningRobot",
-        "HomeAutomation",
-        "FloorCleaning",
-        "MopRobot",
-        "WirelessCleaning",
-        "AutomatedCleaning",
-        "IntelligentCleaning",
-        "SmartCleaning",
-        "SmartCleaningRobot",
-        "SmartCleaningDevice",
-        "SmartCleaningAppliance",
-        "SmartCleaningGadget",
-        "Cleaning",
-        "clean"
+        "Kitchen Appliance",
+        "Cooking Technology",
+        "Healthy Eating",
+        "Quick Cooking",
+        "Time Saving",
+        "Easy Cleaning",
+        "Low Fat Cooking",
+        "Kitchen Gadgets",
+        "Versatile Cooking",
+        "Home Cooking",
+        "Air Fryer Recipes",
+        "Energy Efficient",
+        "Meal Prep",
+        "Crispy Results",
+        "Smart Kitchen",
+        "Convenient Cooking",
+        "Space-Saving",
+        "Dishwasher Safe",
+        "Appliance Innovation"
     ],
     "images": [
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778013/efficiencyhub/products/images/eg3pfoxmrdrt34awdusp.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778012/efficiencyhub/products/images/qpr2sh8oxykft4gfxvef.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uixyv8etwcnyh1cg8wbg.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/i3vhitydxdg0qmr8oxuc.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778011/efficiencyhub/products/images/uvkq06ezx06xzdkahnkv.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/d0ejovgpusqjis2g082m.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778010/efficiencyhub/products/images/kh9pqafqtjrovxck9on9.jpg",
-        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1703778009/efficiencyhub/products/images/uwzozhvuzg6qxip1bqqm.jpg"
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011807/efficiencyhub/products/images/kzmsg8kb7gqquuobstxb.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011817/efficiencyhub/products/images/atnut7zd42ofswnk5i1f.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011826/efficiencyhub/products/images/ssarljy6bgoowhtuiup0.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011827/efficiencyhub/products/images/jzwxlfduxrw0qzeatvcy.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011840/efficiencyhub/products/images/jrittzhcyoeftoxhf4ns.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011842/efficiencyhub/products/images/xmoio756bmaahytbtzec.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011843/efficiencyhub/products/images/axiif5u0wpkdumbrfwlk.jpg",
+        "https://res.cloudinary.com/dc39mtsh5/image/upload/v1704011847/efficiencyhub/products/images/rcwfc3rzqvvsuibafc58.jpg"
     ],
     "videos": [
-        "https://www.tiktok.com/@giftgenius/video/7302888336979561733",
-        "https://www.tiktok.com/@bettergifts/video/7302889138267753734",
-        "https://www.tiktok.com/@mechanicallyincleyend/video/7302948122009881887",
-        "https://www.tiktok.com/@devdoesreviews/video/7306958743739190560"
+        "https://www.tiktok.com/embed/7282790167646162218",
+        "https://www.tiktok.com/embed/7238954189936807211",
+        "https://www.tiktok.com/embed/7165870672546172166",
+        "https://www.tiktok.com/embed/7121408053005602053",
+        "https://www.tiktok.com/embed/7259440238408355078"
     ],
-    "category": "Cleaning Supplies"
+    "category": "kitchen"
 }

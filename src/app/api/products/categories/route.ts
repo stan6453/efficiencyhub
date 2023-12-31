@@ -22,3 +22,5 @@ export async function GET(request: NextRequest) {
 
     return Response.json({ status: 200, body: { categories } })
 }
+
+export const revalidate = 60;
