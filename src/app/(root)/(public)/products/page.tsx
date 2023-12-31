@@ -5,6 +5,7 @@ import { useState, useEffect, useContext } from "react";
 import ProductList from "@/components/ProductList";
 import ProductCard from '../../../../components/ProductCard';
 import { SelectItems as SelectCategories } from "@/components/formComponents";
+import { Metronome } from "@/components/Loading";
 import searchContext from "@/utils/searchContext";
 import { getAndSetProducts } from "@/utils/products";
 
@@ -51,9 +52,7 @@ export default function ProductIndex() {
 
     if (products === null) {
         return (
-            <div>
-                <p>Loading...</p>
-            </div>
+            <Metronome />
         )
     }
 

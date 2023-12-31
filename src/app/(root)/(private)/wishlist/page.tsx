@@ -7,6 +7,7 @@ import ProductCard from '../../../../components/ProductCard';
 
 import { getWishList } from "../../../../../src/utils/wishlist";
 import { getWishlistProducts } from "../../../../../src/utils/wishlist";
+import { Metronome } from "@/components/Loading";
 
 
 export default function Wishlist() {
@@ -31,9 +32,7 @@ export default function Wishlist() {
 
     if (products === null) {
         return (
-            <div>
-                <p>Loading...</p>
-            </div>
+            <Metronome />
         )
     }
 

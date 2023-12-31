@@ -1,4 +1,6 @@
 export const logos:any = {
+    amazon: '/amazon-logo-1.png',
+    aliexpress:'/AliExpress-Logo.png',
     jumia: '/Jumia-Logo.png',
     konga: '/konga.svg',
 }

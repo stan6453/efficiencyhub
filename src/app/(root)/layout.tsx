@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import searchContext from '@/utils/searchContext'
 import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Category } from '../../../global_types';
 
 
@@ -39,6 +40,7 @@ export default function RootLayout({
         }}>
             <NavBar />
             {children}
+            <Footer />
         </searchContext.Provider>
     )
 }

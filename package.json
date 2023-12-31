@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.27.2",
+    "ldrs": "^1.0.1",
     "mongoose": "^8.0.1",
     "next": "^14.0.2",
     "react": "^18",

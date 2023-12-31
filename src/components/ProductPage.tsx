@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { getProduct } from "@/utils/products";
 import DisplayProduct from "@/components/DisplayProduct";
 import SimilarProducts from "@/components/SimilarProducts";
+import { Metronome } from "@/components/Loading";
+
 
 export default function ProductPage() {
   const params = useParams<{ id: string }>()
@@ -22,7 +24,7 @@ export default function ProductPage() {
   }, [])
 
   if (isFetching) {
-    return <div>Loading...</div>
+    return <Metronome />
   }
 
   return (
